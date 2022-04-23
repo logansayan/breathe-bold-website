@@ -19,10 +19,13 @@ html, body {
 body {
     color: #efefef;
     font-family: 'Lato', sans-serif;
+    background-color: #b9b9b9;
 }
 
 .header {
-    background-color: #0e0d0d;
+    background-image: url('./images/workout.jpg');
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+    background-size: cover;
     height: 100vh;
 }
 
@@ -52,7 +55,7 @@ body {
     position: absolute;
     top: 30%;
     font-size: 2rem;
-    width: 50%;
+    width: 70rem;
     left: 15%;
 }
 
@@ -63,4 +66,64 @@ body {
     top: 5%;
     left: 15%;
     font-size: 2.5rem;
+}
+
+.phrase {
+    font-size: 7rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+.paragraph {
+    color: #b9b9b9;
+    line-height: 2.8rem;
+}
+
+.buttons {
+    margin-top: 5rem;
+}
+
+.sign-up,
+.details {
+    border: none;
+    padding: 13px 25px;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sign-up:hover,
+.details:hover {
+    background-color: #a3d220;
+    border: 1px solid #a3d220;
+    transition: .5s;
+}
+
+.sign-up {
+    background-color: #355592;
+    color: #efefef;
+    border: 1px solid #355592;
+    margin-right: 20px;
+}
+
+.details {
+    border: 1px solid #efefef;
+    background-color: #0e0d0d;
+    color: #efefef;
+}
+
+@media all and (max-width: 1140px) {
+    .navbar {
+        right: 3%;
+    }
+
+    .brand {
+        left: 3%;
+    }
+
+    .main {
+        left: 3%;
+    }
 }
