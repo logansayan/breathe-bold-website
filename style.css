@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 
 * {
     margin: 0;
@@ -10,5 +12,55 @@ html {
 }
 
 html, body {
-    
+    min-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    color: #efefef;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: #0e0d0d;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 6%;
+}
+
+.nav-item {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #efefef;
+    font-weight: 900;
+}
+
+.main {
+    position: absolute;
+    top: 30%;
+    font-size: 2rem;
+    width: 50%;
+    left: 15%;
+}
+
+.brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    font-size: 2.5rem;
 }
