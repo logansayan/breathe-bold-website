@@ -1,5 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
 
+:root {
+    --white-primary: #fff;
+    --white-secondary: #efefef;
+    --dark-cyan: #00444e;
+    --light-cyan: #04889d;
+    --yellow: #F8CB2E;
+    --orange: #EE5007;
+    --red: #EE5007;
+}
 
 * {
     margin: 0;
@@ -7,123 +16,244 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-html, body {
-    min-height: 100%;
-    max-width: 100%;
-}
-
 body {
-    color: #efefef;
-    font-family: 'Lato', sans-serif;
-    background-color: #b9b9b9;
+    font-family: 'Poppins';
+    overflow-x: hidden;
 }
 
-.header {
-    background-image: url('./images/workout.jpg');
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-    background-size: cover;
-    height: 100vh;
-}
+    /* NAVIGATION */
+
+
 
 .navbar {
+    background-color: var(--dark-cyan);
     display: flex;
-    position: absolute;
-    right: 10%;
-    top: 6%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: var(--white-primary);
 }
 
-.nav-item {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-
-.nav-item:not(:last-child) {
-    margin-right: 2rem;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: #efefef;
-    font-weight: 900;
-}
-
-.main {
-    position: absolute;
-    top: 30%;
+.navbar-brand {
+    font-weight: 700;
     font-size: 2rem;
-    width: 70rem;
-    left: 15%;
+    padding: 1rem;
 }
 
-.brand {
-    text-transform: uppercase;
-    font-weight: 900;
-    position: absolute;
-    top: 5%;
-    left: 15%;
-    font-size: 2.5rem;
+.navbar-brand span {
+    color: var(--yellow);
 }
 
-.phrase {
-    font-size: 7rem;
-    font-weight: 900;
-    margin-bottom: 3rem;
-}
-
-.paragraph {
-    color: #b9b9b9;
-    line-height: 2.8rem;
-}
-
-.buttons {
-    margin-top: 5rem;
-}
-
-.sign-up,
-.details {
-    border: none;
-    padding: 13px 25px;
-    font-size: 1.6rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    border-radius: 3px;
+.toggle-button {
+    display: none;
     cursor: pointer;
 }
 
-.sign-up:hover,
-.details:hover {
-    background-color: #a3d220;
-    border: 1px solid #a3d220;
-    transition: .5s;
+
+
+.navbar-links ul {
+    display: flex;
 }
 
-.sign-up {
-    background-color: #355592;
-    color: #efefef;
-    border: 1px solid #355592;
-    margin-right: 20px;
+.navbar-links li {
+    list-style: none;
 }
 
-.details {
-    border: 1px solid #efefef;
-    background-color: #0e0d0d;
-    color: #efefef;
+.navbar-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: var(--white-primary);
+    font-weight: 700;
+    padding: 1rem;
 }
 
-@media all and (max-width: 1140px) {
+.navbar-links a:hover {
+    background-color: var(--light-cyan);
+    transition: .2s ease;
+    border-radius: 3px;
+}
+
+
+/* MAIN */
+
+.main {
+    height: 90vh;
+    background-image: url('./hero.jpg');
+    background-size: cover;
+    background-position: top right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    /* clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); */
+}
+
+.content {
+    width: 60rem;
+    margin-left: 10%;
+}
+
+.phrase {
+    font-size: 4rem;
+    color: var(--white-secondary);
+}
+
+.phrase span {
+    color: var(--yellow);
+}
+
+.description {
+    color: var(--white-primary);
+    font-size: 1.2rem;
+}
+
+.buttons {
+    margin: 2rem 0;
+}
+
+.sign-up-btn,
+.details-btn {
+    border: none;
+    padding: 1rem 1.2rem;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.sign-up-btn {
+    background-color: var(--dark-cyan);
+    color: white;
+    margin-right: .5rem;
+}
+
+.details-btn {
+    background-color: var(--yellow);
+}
+
+.sign-up-btn:hover,
+.details-btn:hover {
+    background-color: var(--white-primary);
+    color: black;
+    transition: .2s ease;
+}
+
+/* STATS */
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--white-primary);
+    padding: 5rem;
+    /* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%); */
+}
+
+.stat-item {
+    padding: 1rem;
+    background-color: var(--white-secondary);
+    border-radius: 20px;
+    width: 200px;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px 5px #e1e1e1;
+}
+
+
+
+.count,
+.topic {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media (max-width: 950px) {
+
+    /* NAVIGATION */
     .navbar {
-        right: 3%;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .brand {
-        left: 3%;
+    .remove-navbar {
+        display: none;
     }
 
-    .main {
-        left: 3%;
+    .navbar-links {
+        width: 100%;
+        padding-bottom: 1rem;
+        
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+    }
+
+
+    .fa-bars:hover {
+        transform: scale(1.1);
+        color: var(--yellow);
+    }
+
+    /* MAIN */
+
+    .content {
+        width: 40rem;
+        margin-left: 0;
+    }
+
+    .phrase {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1rem;
     }
 }
+
+@media (max-width: 582px) {
+    .main {
+        justify-content: center;
+        padding: 0 1rem;
+        height: 60vh;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .phrase {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+}
+

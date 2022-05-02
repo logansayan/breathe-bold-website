@@ -4,33 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Powerful</title>
+    <title>Navbar</title>
     <link rel="stylesheet" href="./style.css">
+
+    <script src="https://kit.fontawesome.com/83ef5b7ffb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+    <section class="navigation">
         <nav class="navbar">
-            <nav class="nav-item"><a href="#" class="nav-link">Home</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">About</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">Class</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">Service</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">Trainer</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">Review</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">Blog</a></nav>
-            <nav class="nav-item"><a href="#" class="nav-link">Contact</a></nav>
+            <div class="navbar-brand">POWER<span>FULL</span></div>
+            <a class="toggle-button">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </a>
+            <div class="navbar-links remove-navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Class</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Trainer</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+    </section>
 
-        <h2 class="brand">Powerfull</h2>
-
-        <div class="main">
+    <section class="main">
+        <div class="content">
+            <h1 class="phrase">
+                We are best <span>Jymnes</span> Powerful Weight
+            </h1>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, modi. Sapiente harum labore neque voluptate enim hic error. Nulla, possimus.</p>
             
-            <h1 class="phrase">We are best Jymnes Powerful Weight</h1>
-            <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At corporis culpa quis accusantium. Nemo obcaecati in officia minima? Id, ea.</p>
             <div class="buttons">
-                <button class="sign-up">Sign Up</button>
-                <button class="details">Details</button>
+                <button class="sign-up-btn">sign up</button>
+                <button class="details-btn">details</button>
             </div>
         </div>
-    </header>
+    </section>
+
+    <section class="stats">
+
+        <div class="stat-item">
+            <h3 class="count">325</h3>
+            <p class="topic">course</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="count">405</h3>
+            <p class="topic">workout</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="count">305</h3>
+            <p class="topic">working hour</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="count">705</h3>
+            <p class="topic">happy client</p>
+        </div>
+    </section>
+        
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./index.js"></script>
 </body>
 </html>
