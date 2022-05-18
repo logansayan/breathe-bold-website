@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --white-primary: #FFF;
     --white-secondary: #EFEFEF;
     --dark-cyan: #00444E;
     --light-cyan: #04889D;
+    --very-light-cyan: #E8F9FD;
     --yellow: #F8CB2E;
     --orange: #EE5007;
     --red: #EE5007;
@@ -43,10 +44,16 @@ body {
     font-weight: 700;
     font-size: 3rem;
     padding: 1.5rem;
+    text-decoration: none;
+    color: var(--white-primary);
+}
+
+.logo {
+    color: var(--yellow);
 }
 
 .navbar-brand span {
-    color: var(--yellow);
+    color: var(--white-primary);
 }
 
 .toggle-button {
@@ -82,7 +89,7 @@ body {
 
 .header {
     height: 90vh;
-    background-image: url('./hero.jpg');
+    background-image: url('./img/hero.jpg');
     background-size: cover;
     background-position: top right;
     display: flex;
@@ -146,27 +153,8 @@ body {
     color: black;
 }
 
-/* STATS */
+/* SECTION ABOUT */
 
-.section-stats {
-    text-align: center;
-}
-
-.section-heading {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-    margin-top: 5rem;
-    
-    display: inline-block;
-    border-bottom: 1px solid var(--white-primary);
-    transition: all .2s;
-}
-
-.section-heading:hover {
-    border-bottom: 1px solid rgb(0,68,78);
-}
 
 .stats {
     display: flex;
@@ -182,7 +170,15 @@ body {
     border-radius: 1rem;
     width: 200px;
     margin: 1rem;
+    background-color: var(--yellow);
+    transition: all .2s;
     box-shadow: 0 .5rem 1rem var(--black);
+    backface-visibility: hidden;
+}
+
+.stat-item:hover {
+    box-shadow: 0 1rem 1rem var(--black);
+    transform: scale(1.01) translateY(-.5rem);
 }
 
 .count,
@@ -190,6 +186,51 @@ body {
     text-align: center;
     text-transform: capitalize;
 }
+
+
+/* SECTION WORKOUT */
+
+.workout-heading {
+    color: var(--dark-cyan);
+    border-bottom: 2px solid var(--very-light-cyan);
+    transition: all .2s;
+}
+
+.workout-heading:hover {
+    border-bottom: 2px solid var(--dark-cyan);
+    transform: scale(1.02);
+}
+
+.workout-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.workout-img {
+    border-radius: 3px;
+    width: 600px;
+}
+
+.workout-text {
+    width: 40%;
+}
+
+.workout-text-heading {
+    color: var(--light-cyan);
+}
+
+.workout-text-items {
+    list-style: none;
+    columns: 2;
+}
+
+.workout-text-items span {
+    font-weight: 600;
+}
+
+
+/* MEDIA QUERIES */
 
 @media (max-width: 950px) {
 
@@ -253,11 +294,10 @@ body {
     }
 }
 
-@media (max-width: 582px) {
+@media (max-width: 600px) {
     .header {
         justify-content: center;
         padding: 0 1rem;
-        height: 60vh;
     }
 
     .phrase {
@@ -277,11 +317,75 @@ body {
 
 /* UTILITIES */
 
-.gradient-text {
-    background: rgb(0,68,78);
-    background: linear-gradient(73deg, rgba(0,68,78,1) 20%, rgba(148,131,71,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.section-workout {
+    background-color: var(--very-light-cyan);
+    padding: 5rem 0;
 }
 
+.heading-container {
+    text-align: center;
+}
+
+.u-gradient-text {
+    display: inline-block;
+    background: linear-gradient(73deg, rgba(0,68,78,1) 20%, rgba(148,131,71,1) 100%);
+    -webkit-background-clip: text;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-clip: text;
+    color: transparent;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid white;
+    transition: all .2s;
+}
+
+.u-gradient-text:hover {
+    border-bottom: 1px solid rgb(0,68,78);
+    transform: scale(1.02);
+}
+
+.u-heading-primary {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.u-heading-secondary {
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.u-text-default {
+    font-size: 1.6rem;
+}
+
+/* Top Margin Utilities */
+
+.u-margin-bottom-small {
+    margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 6rem;
+}
+
+/* Bottom Margin Utilities */
+.u-margin-top-small {
+    margin-top: 2rem;
+}
+
+.u-margin-top-medium {
+    margin-top: 4rem;
+}
+
+.u-margin-top-big {
+    margin-top: 6rem;
+}
