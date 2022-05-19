@@ -95,8 +95,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5rem;
-    /* clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); */
 }
 
 .content {
@@ -190,6 +188,11 @@ body {
 
 /* SECTION WORKOUT */
 
+.section-workout {
+    box-shadow: 0 2rem 4rem var(--black);
+    overflow-x: hidden;
+}
+
 .workout-heading {
     color: var(--dark-cyan);
     border-bottom: 2px solid var(--very-light-cyan);
@@ -210,6 +213,7 @@ body {
 .workout-img {
     border-radius: 3px;
     width: 600px;
+    transition: all .4s;
 }
 
 .workout-text {
@@ -217,7 +221,8 @@ body {
 }
 
 .workout-text-heading {
-    color: var(--light-cyan);
+    color: var(--dark-cyan);
+    font-weight: 600;
 }
 
 .workout-text-items {
@@ -228,92 +233,6 @@ body {
 .workout-text-items span {
     font-weight: 600;
 }
-
-
-/* MEDIA QUERIES */
-
-@media (max-width: 950px) {
-
-    /* NAVIGATION */
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .remove-navbar {
-        display: none;
-    }
-
-    .navbar-links {
-        width: 100%;
-        padding-bottom: 1.5rem;
-    }
-
-    .navbar-links ul {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .navbar-links li {
-        width: 100%;
-    }
-
-    .navbar-links a {
-        padding: 1.5rem;
-        display: block;
-        width: 100%;
-    }
-
-    .toggle-button {
-        display: flex;
-        position: absolute;
-        right: 2.5rem;
-        top: 2rem;
-        font-size: 1.7rem;
-    }
-
-
-    .fa-bars:hover {
-        transform: scale(1.1);
-        color: var(--yellow);
-    }
-
-    /* HEADER */
-
-    .content {
-        width: 80%;
-    }
-
-    .phrase {
-        font-size: 5rem;
-    }
-
-    .description {
-        font-size: 1.7rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .header {
-        justify-content: center;
-        padding: 0 1rem;
-    }
-
-    .phrase {
-        text-align: center;
-        font-size: 4rem;
-    }
-
-    .description {
-        text-align: center;
-    }
-
-    .buttons {
-        text-align: center;
-    }
-}
-
 
 /* UTILITIES */
 
@@ -389,3 +308,136 @@ body {
 .u-margin-top-big {
     margin-top: 6rem;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .workout-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .workout-text {
+        width: 90%;
+    }
+
+    .workout-img {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 950px) {
+
+    /* NAVIGATION */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remove-navbar {
+        display: none;
+    }
+
+    .navbar-links {
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        padding: 1.5rem;
+        display: block;
+        width: 100%;
+    }
+
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        right: 2.5rem;
+        top: 2rem;
+        font-size: 1.7rem;
+    }
+
+
+    .fa-bars:hover {
+        transform: scale(1.1);
+        color: var(--yellow);
+    }
+
+    /* SECTION HEADER */
+
+    .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .phrase {
+        font-size: 5rem;
+    }
+
+    .description {
+        font-size: 1.7rem;
+    }
+
+    /* SECTION WORKOUT */
+
+    .u-heading-primary {
+        font-size: 3rem;
+    }
+
+    .u-heading-secondary {
+        font-size: 2.5rem;
+    }
+
+    .workout-img {
+        width: 450px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* SECTION HEADER */
+    .header {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .phrase {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    /* SECTION WORKOUT */
+
+    .workout-img {
+        width: 350px;
+    }
+
+    .u-heading-primary {
+        font-size: 2.5rem;
+    }
+
+    .u-heading-primary {
+        font-size: 2rem;
+    }
+}
+
+
