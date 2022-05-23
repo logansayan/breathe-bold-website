@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oswald:wght@500;700&display=swap');
 
 :root {
     --white-primary: #FFF;
@@ -183,23 +184,23 @@ body {
 .topic {
     text-align: center;
     text-transform: capitalize;
+    color: var(--black);
 }
 
 
 /* SECTION WORKOUT */
 
 .section-workout {
+    background-color: var(--very-light-cyan);
+    padding: 5rem 0;
     overflow-x: hidden;
 }
 
 .workout-heading {
-    color: var(--dark-cyan);
-    border-bottom: 2px solid var(--very-light-cyan);
     transition: all .2s;
 }
 
 .workout-heading:hover {
-    border-bottom: 2px solid var(--dark-cyan);
     transform: scale(1.02);
 }
 
@@ -221,13 +222,15 @@ body {
 }
 
 .workout-text-heading {
-    color: var(--dark-cyan);
     font-weight: 600;
+    color: var(--black);
 }
 
 .workout-text-items {
     list-style: none;
     columns: 2;
+    color: var(--black);
+
 }
 
 .workout-text-items span {
@@ -247,11 +250,18 @@ body {
 }
 
 .feature-card {
-    width: 300px;
-    box-shadow: 0 .1rem 4rem var(--black);
+    background-color: var(--white-secondary);
+    width: 20%;
+    height: 35rem;
+    box-shadow: 0 .1rem 2rem var(--black);
     font-size: 1.5rem;
     border-radius: 5px;
-    margin: 0 auto;
+    transition: all .2s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 1rem 4rem var(--black);
+    transform: scale(1.01) translateY(-3px);
 }
 
 .feature-content {
@@ -265,17 +275,16 @@ body {
 .card-header {
     margin-bottom: 1rem;
     text-transform: capitalize;
+    color: var(--black);
 }
 
 .card-text {
+    color: var(--black);
 }
 
 /* UTILITIES */
 
-.section-workout {
-    background-color: var(--very-light-cyan);
-    padding: 5rem 0;
-}
+
 
 .heading-container {
     text-align: center;
@@ -293,6 +302,8 @@ body {
 }
 
 .u-heading-primary {
+    color: var(--black);
+    font-family: 'Oswald', sans-serif;
     display: inline-block;
     font-size: 4rem;
     font-weight: 600;
@@ -301,6 +312,7 @@ body {
 }
 
 .u-heading-secondary {
+    color: var(--black);
     font-size: 3rem;
     text-transform: capitalize;
 }
@@ -339,6 +351,9 @@ body {
 /* MEDIA QUERIES */
 
 @media (max-width: 1200px) {
+    /* SECTION WORKOUT */
+
+
     .workout-content {
         flex-direction: column;
         text-align: center;
@@ -351,6 +366,18 @@ body {
 
     .workout-img {
         margin-bottom: 5rem;
+    }
+
+    /* SECTION FEATURES */
+
+    .features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-card {
+        width: 300px;
+        margin: 2rem;
     }
 }
 
@@ -429,6 +456,8 @@ body {
     .workout-img {
         width: 450px;
     }
+
+
 }
 
 @media (max-width: 600px) {
@@ -456,14 +485,6 @@ body {
 
     .workout-img {
         width: 350px;
-    }
-
-    .u-heading-primary {
-        font-size: 2.5rem;
-    }
-
-    .u-heading-primary {
-        font-size: 2rem;
     }
 }
 
