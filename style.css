@@ -154,7 +154,6 @@ body {
 
 /* SECTION ABOUT */
 
-
 .stats {
     display: flex;
     flex-wrap: wrap;
@@ -169,7 +168,7 @@ body {
     border-radius: 1rem;
     width: 200px;
     margin: 1rem;
-    background-color: var(--yellow);
+    background-color: var(--very-light-cyan);
     transition: all .2s;
     box-shadow: 0 .5rem 1rem var(--black);
     backface-visibility: hidden;
@@ -239,9 +238,7 @@ body {
 
 /* SECTION FEATURES */
 
-.section-features {
-    padding: 5rem 0;
-}
+
 
 .features {
     display: flex;
@@ -252,7 +249,7 @@ body {
 .feature-card {
     background-color: var(--white-secondary);
     width: 20%;
-    height: 35rem;
+    padding-bottom: 2rem;
     box-shadow: 0 .1rem 2rem var(--black);
     font-size: 1.5rem;
     border-radius: 5px;
@@ -282,9 +279,37 @@ body {
     color: var(--black);
 }
 
+/* SECTION STORIES */
+
+.section-stories {
+
+}
+
+.stories {
+    
+}
+
+.story {
+}
+
+.story-img-div {
+
+}
+
+.story-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.story-text-div {
+
+}
+
 /* UTILITIES */
 
-
+.section-default-padding {
+    padding: 5rem 0;
+}
 
 .heading-container {
     text-align: center;
@@ -309,10 +334,17 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
+    transition: all .2s;
+    backface-visibility: hidden;
+}
+
+.u-heading-primary:hover {
+    transform: scale(1.01);
 }
 
 .u-heading-secondary {
     color: var(--black);
+    font-family: 'Oswald', sans-serif;
     font-size: 3rem;
     text-transform: capitalize;
 }
