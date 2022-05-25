@@ -26,6 +26,7 @@ html {
 body {
     font-family: 'Poppins';
     overflow-x: hidden;
+    color: var(--black);
 }
 
     /* NAVIGATION */
@@ -149,7 +150,7 @@ body {
 .sign-up-btn:hover,
 .details-btn:hover {
     background-color: var(--white-primary);
-    color: black;
+    color: var(--black);
 }
 
 /* SECTION ABOUT */
@@ -183,7 +184,6 @@ body {
 .topic {
     text-align: center;
     text-transform: capitalize;
-    color: var(--black);
 }
 
 
@@ -222,14 +222,11 @@ body {
 
 .workout-text-heading {
     font-weight: 600;
-    color: var(--black);
 }
 
 .workout-text-items {
     list-style: none;
     columns: 2;
-    color: var(--black);
-
 }
 
 .workout-text-items span {
@@ -272,43 +269,66 @@ body {
 .card-header {
     margin-bottom: 1rem;
     text-transform: capitalize;
-    color: var(--black);
 }
 
 .card-text {
-    color: var(--black);
 }
 
 /* SECTION STORIES */
 
 .section-stories {
-
 }
 
 .stories {
-    
+    width: 50%;
+    margin: 0 auto;
 }
 
 .story {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 .2rem 3rem var(--black);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.story:not(:last-child) {
+    margin-bottom: 5rem;
 }
 
 .story-img-div {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .story-img {
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
 }
 
 .story-text-div {
+    width: 70%;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.story-text-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.story-text-para {
+    font-size: 1.5rem;
 }
 
 /* UTILITIES */
 
 .section-default-padding {
-    padding: 5rem 0;
+    padding: 5rem 1rem;
 }
 
 .heading-container {
@@ -327,7 +347,6 @@ body {
 }
 
 .u-heading-primary {
-    color: var(--black);
     font-family: 'Oswald', sans-serif;
     display: inline-block;
     font-size: 4rem;
@@ -343,7 +362,6 @@ body {
 }
 
 .u-heading-secondary {
-    color: var(--black);
     font-family: 'Oswald', sans-serif;
     font-size: 3rem;
     text-transform: capitalize;
@@ -410,6 +428,16 @@ body {
     .feature-card {
         width: 300px;
         margin: 2rem;
+    }
+
+    /* SECTION FEATURES */
+
+    .stories {
+        width: 70%;
+    }
+
+    .story-text-div{
+        width: 90%;
     }
 }
 
@@ -489,7 +517,11 @@ body {
         width: 450px;
     }
 
+    /* SECTION STORY */
 
+    .story-text-div {
+        width: 60%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -517,6 +549,28 @@ body {
 
     .workout-img {
         width: 350px;
+    }
+
+    /* SECTION STORY */
+
+    .story {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .story:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    .story-img-div {
+        margin-bottom: 2rem;
+    }
+
+    .story-text-div {
+        text-align: center;
+        margin-left: 0;
+        width: 90%;
     }
 }
 
