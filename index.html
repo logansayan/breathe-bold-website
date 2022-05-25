@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muscle Monsters | Best Place Workout & Training</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icons.css">
 
     <script src="https://kit.fontawesome.com/83ef5b7ffb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navigation">
         <nav class="navbar">
-            <a href="#" class="navbar-brand"><i class="fa-solid fa-dumbbell logo"></i> MUSCLE <span>MONSTERS</span></a>
-            <a class="toggle-button">
+            <a href="#" class="navbar__brand"><i class="fa-solid fa-dumbbell navbar__logo"></i> MUSCLE <span>MONSTERS</span></a>
+            <a class="navbar__toggle">
                 <i class="fa-solid fa-bars fa-2x"></i>
             </a>
-            <div class="navbar-links remove-navbar">
+            <div class="navbar__links navbar__remove">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -31,37 +31,37 @@
     </nav>
 
     <header class="header">
-        <div class="content">
-            <h1 class="phrase">
+        <div class="header-content">
+            <h1 class="header-content__phrase">
                 Unleash Your Inner <span>Monster</span> Right Now.
             </h1>
-            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, modi. Sapiente harum labore neque voluptate enim hic error. Nulla, possimus.</p>
+            <p class="header-content__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, modi. Sapiente harum labore neque voluptate enim hic error. Nulla, possimus.</p>
             
-            <div class="buttons">
-                <button class="sign-up-btn">sign up</button>
-                <button class="details-btn">details</button>
+            <div class="header-btn">
+                <button class="header-btn__sign-up">sign up</button>
+                <button class="header-btn__details">details</button>
             </div>
         </div>
     </header>
 
     <main>
         <section class="section-about section-default-padding">    
-            <div class="stats">
-                <div class="stat-item">
-                    <h3 class="count">325</h3>
-                    <p class="topic">course</p>
+            <div class="about">
+                <div class="about-item">
+                    <h3 class="about-item__count">325</h3>
+                    <p class="about-item__topic">course</p>
                 </div>
-                <div class="stat-item">
-                    <h3 class="count">405</h3>
-                    <p class="topic">workout</p>
+                <div class="about-item">
+                    <h3 class="about-item__count">405</h3>
+                    <p class="about-item__topic">workout</p>
                 </div>
-                <div class="stat-item">
-                    <h3 class="count">305</h3>
-                    <p class="topic">working hour</p>
+                <div class="about-item">
+                    <h3 class="about-item__count">305</h3>
+                    <p class="about-item__topic">working hour</p>
                 </div>
-                <div class="stat-item">
-                    <h3 class="count">705</h3>
-                    <p class="topic">happy client</p>
+                <div class="about-item">
+                    <h3 class="about-item__count">705</h3>
+                    <p class="about-item__topic">happy client</p>
                 </div>
             </div>
         </section>
@@ -71,16 +71,16 @@
                 <h2 class="u-heading-primary u-margin-bottom-big">Make your body a work of art</h2>
             </div>
 
-            <div class="workout-content">
-                <img src="./img/weight-lift.jpg" alt="Workout" class="workout-img">
+            <div class="workout">
+                <img src="./img/weight-lift.jpg" alt="Workout" class="workout__img">
                 <div class="workout-text">
-                    <h2 class="workout-text-heading u-heading-secondary u-margin-bottom-small">Workout like a devil</h2>
+                    <h2 class="workout-text__heading u-heading-secondary u-margin-bottom-small">Workout like a devil</h2>
 
-                    <p class="workout-text-paragraph u-text-default u-margin-bottom-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus delectus corrupti facere aperiam velit dolores fuga ratione porro facilis. Pariatur officiis similique temporibus veritatis ipsam quisquam, neque iste recusandae alias!</p>
+                    <p class="workout-text__paragraph u-text-default u-margin-bottom-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus delectus corrupti facere aperiam velit dolores fuga ratione porro facilis. Pariatur officiis similique temporibus veritatis ipsam quisquam, neque iste recusandae alias!</p>
 
-                    <h2 class="workout-text-heading u-heading-secondary u-margin-bottom-small">Burn and gain muscle</h2>
+                    <h2 class="workout-text__heading u-heading-secondary u-margin-bottom-small">Burn and gain muscle</h2>
 
-                    <ul class="workout-text-items u-text-default">
+                    <ul class="workout-text__items u-text-default">
                         <li><span>Commitment:</span> 3 days per week</li>
                         <li><span>Duration:</span> 50min</li>
                         <li><span>Exercises:</span> 7 type</li>
@@ -99,6 +99,7 @@
             <!-- add background photo with overlay -->
         <!-- PLANS -->
         <!-- REVIEWS -->
+        <!-- should make navbar fixed later -->
 
         <section class="section-features section-default-padding">
             <div class="heading-container">
@@ -107,32 +108,24 @@
 
             <div class="features">
                 <div class="feature-card">
-                    <div class="feature-content">
-                        <i class="card-icon icon-basic-bolt u-gradient-text"></i>
-                        <h3 class="card-header">Proper workout plans</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime laborum saepe molestiae facilis veritatis assumenda aspernatur. Quis, aliquam eos?</p>
-                    </div>
+                    <i class="feature-card__icon icon-basic-bolt u-gradient-text"></i>
+                    <h3 class="feature-card__header">Proper workout plans</h3>
+                    <p class="feature-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime laborum saepe molestiae facilis veritatis assumenda aspernatur. Quis, aliquam eos?</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-content">
-                        <i class="card-icon icon-basic-info u-gradient-text"></i>
-                        <h3 class="card-header">Knowledge about suppliments</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro quis minima odio fugiat ab iste incidunt officia blanditiis expedita.</p>
-                    </div>
+                    <i class="feature-card__icon icon-basic-info u-gradient-text"></i>
+                    <h3 class="feature-card__header">Knowledge about suppliments</h3>
+                    <p class="feature-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae porro quis minima odio fugiat ab iste incidunt officia blanditiis expedita.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-content">
-                        <i class="card-icon icon-basic-clockwise u-gradient-text"></i>
-                        <h3 class="card-header">Proper diet charts</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium tempora dicta autem repellat fugiat iure reiciendis dolore possimus magnam dolorem.</p>
-                    </div>
+                    <i class="feature-card__icon icon-basic-clockwise u-gradient-text"></i>
+                    <h3 class="feature-card__header">Proper diet charts</h3>
+                    <p class="feature-card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium tempora dicta autem repellat fugiat iure reiciendis dolore possimus magnam dolorem.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-content">
-                        <i class="card-icon icon-basic-paperplane u-gradient-text"></i>
-                        <h3 class="card-header">Affordable plans</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium tempora dicta autem repellat fugiat iure reiciendis dolore possimus magnam dolorem.</p>
-                    </div>
+                    <i class="feature-card__icon icon-basic-paperplane u-gradient-text"></i>
+                    <h3 class="feature-card__header">Affordable plans</h3>
+                    <p class="feature-card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium tempora dicta autem repellat fugiat iure reiciendis dolore possimus magnam dolorem.</p>
                 </div>
             </div>
         </section>
@@ -140,29 +133,38 @@
         <section class="section-stories section-default-padding">
             <div class="heading-container">
                 <h2 class="workout-heading u-heading-primary u-margin-bottom-big">
-                    See what our members are feeling
+                    See how our members are feeling
                 </h2>
             </div>
             <div class="stories">
                 <div class="story">
-                    <div class="story-img-div"><img class="story-img" src="./img/lady-1.jpg" alt="Img"></div>
-                    <div class="story-text-div">
-                        <h3 class="story-text-heading">Living a healthier life</h3>
-                        <p class="story-text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque tempore quia, magnam iure quisquam?</p>
+                    <div class="img-box">
+                        <img class="img-box__img" src="./img/lady-1.jpg" alt="Img">
+                        <p class="img-box__name">Sarah W.</p>
+                    </div>
+                    <div class="text-box">
+                        <h3 class="text-box__heading">Living a healthier life</h3>
+                        <p class="text-box__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque tempore quia, magnam iure quisquam?</p>
                     </div>
                 </div>
                 <div class="story">
-                    <div class="story-img-div"><img class="story-img" src="./img/man-1.jpg" alt="Img"></div>
-                    <div class="story-text-div">
-                        <h3 class="story-text-heading">Great workout plans to keep your body on full battery</h3>
-                        <p class="story-text-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dolorem incidunt veniam expedita possimus quam in aut unde? Repellendus, ullam?</p>
+                    <div class="img-box">
+                        <img class="img-box__img" src="./img/man-1.jpg" alt="Img">
+                        <p class="img-box__name">Tyler D.</p>
+                    </div>
+                    <div class="text-box">
+                        <h3 class="text-box__heading">Great workout plans to keep your body on full battery</h3>
+                        <p class="text-box__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dolorem incidunt veniam expedita possimus quam in aut unde? Repellendus, ullam?</p>
                     </div>
                 </div>
                 <div class="story">
-                    <div class="story-img-div"><img class="story-img" src="./img/lady-2.jpg" alt="Img"></div>
-                    <div class="story-text-div">
-                        <h3 class="story-text-heading">Thanks to this app I got the perfect body shape</h3>
-                        <p class="story-text-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et modi a esse sint temporibus, ipsum facilis fuga voluptatibus.</p>
+                    <div class="img-box">
+                        <img class="img-box__img" src="./img/lady-2.jpg" alt="Img">
+                        <p class="img-box__name">Lily J.</p>
+                    </div>
+                    <div class="text-box">
+                        <h3 class="text-box__heading">Thanks to this app I got the perfect body shape</h3>
+                        <p class="text-box__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et modi a esse sint temporibus, ipsum facilis fuga voluptatibus.</p>
                     </div>
                 </div>
             </div>

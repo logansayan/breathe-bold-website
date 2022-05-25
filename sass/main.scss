@@ -15,81 +15,17 @@
 @import "./components/about";
 @import "./components/workout";
 @import "./components/features";
+@import "./components/story";
 
 @import "./pages/home";
 
 /* SECTION FEATURES */
 
 
+
 /* SECTION STORIES */
 
-.stories {
-    width: 50%;
-    margin: 0 auto;
-}
 
-.story {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    box-shadow: 0 .2rem 3rem var(--black);
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-.story:not(:last-child) {
-    margin-bottom: 5rem;
-}
-
-.story-img-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.story-img {
-    width: 120px;
-    border-radius: 50%;
-    position: relative;
-    transition: all .3s;
-}
-
-.story-name {
-    position: absolute;
-    z-index: 2;
-    color: white;
-    font-size: 1.5rem;
-    opacity: 0;
-    transform: translateY(5rem);
-    transition: all .3s;
-}
-
-.story-img-div:hover > .story-name {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.story-img-div:hover > .story-img {
-    filter: blur(3px) brightness(80%);
-}
-
-.story-text-div {
-    width: 70%;
-    margin-left: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.story-text-heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.story-text-para {
-    font-size: 1.5rem;
-}
 
 /* UTILITIES */
 

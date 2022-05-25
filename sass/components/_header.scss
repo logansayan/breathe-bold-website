@@ -7,33 +7,34 @@
     align-items: center;
     justify-content: space-between;
 
-    &__content {
+    &-content {
         width: 100rem;
         margin-left: 10%;
-    }
-    
-    &__phrase {
-        font-size: 6rem;
-        color: $white-secondary;
-        margin-bottom: 2rem;
 
-        & span {
-            color: $yellow;
+        &__phrase {
+            font-size: 6rem;
+            color: $white-secondary;
+            margin-bottom: 2rem;
+    
+            & span {
+                color: $yellow;
+            }
         }
+
+        &__description {
+            color: $white-primary;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        
     }
 
-    &__description {
-        color: $white-primary;
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    
-    &__buttons {
+    &-btn {
         margin: 2.5rem 0;
-    }
-    
-    &__sign-up--btn,
-    &__details--btn {
+
+        &__sign-up,
+        &__details {
         border: none;
         padding: 1.5rem 2rem;
         border-radius: 3px;
@@ -42,23 +43,22 @@
         cursor: pointer;
         font-weight: 700;
 
-
         &:hover {
             background-color: $white-primary;
             color: $black;
         }
     }
-    
-    &__sign-up--btn {
+    &__sign-up {
         background-color: $dark-cyan;
         color: $white-primary;
         margin-right: .5rem;
         transition: .2s ease;
     }
     
-    &__details--btn {
+    &__details {
         background-color: $yellow;
         transition: .2s ease;
+    }
     }
 }
 

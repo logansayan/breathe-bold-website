@@ -6,7 +6,7 @@
     padding: 7rem;
 
 
-    &__item {
+    &-item {
         padding: 2.5rem;
         font-size: 1.6rem;
         border-radius: 1rem;
@@ -21,15 +21,13 @@
             box-shadow: 0 1rem 1rem $black;
             transform: scale(1.01) translateY(-.5rem);
         }
-    }
 
-    &__count,
-    &__topic {
-        text-align: center;
-        text-transform: capitalize;
+        &__count,
+        &__topic {
+            text-align: center;
+            text-transform: capitalize;
+        }
     }
-    
-    
 }
 
 
