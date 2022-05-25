@@ -1,0 +1,22 @@
+{
+  "name": "muscle-monsters-website",
+  "version": "1.0.0",
+  "description": "Gym and Fitness Website",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logansayan/muscle-monsters-website.git"
+  },
+  "author": "Sayan Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logansayan/muscle-monsters-website/issues"
+  },
+  "homepage": "https://github.com/logansayan/muscle-monsters-website#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

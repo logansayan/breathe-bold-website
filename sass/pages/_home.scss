@@ -1,0 +1,11 @@
+.header,
+.section-about,
+.section-workout,
+.section-features,
+.section-stories {
+    padding: $section-default-padding;
+}
+
+.section-workout {
+    background-color: $very-light-cyan;
+}

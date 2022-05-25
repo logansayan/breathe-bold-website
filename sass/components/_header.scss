@@ -1,0 +1,64 @@
+.header {
+    height: 90vh;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content {
+        width: 100rem;
+        margin-left: 10%;
+    }
+    
+    &__phrase {
+        font-size: 6rem;
+        color: $white-secondary;
+        margin-bottom: 2rem;
+
+        & span {
+            color: $yellow;
+        }
+    }
+
+    &__description {
+        color: $white-primary;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    &__buttons {
+        margin: 2.5rem 0;
+    }
+    
+    &__sign-up--btn,
+    &__details--btn {
+        border: none;
+        padding: 1.5rem 2rem;
+        border-radius: 3px;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        font-weight: 700;
+
+
+        &:hover {
+            background-color: $white-primary;
+            color: $black;
+        }
+    }
+    
+    &__sign-up--btn {
+        background-color: $dark-cyan;
+        color: $white-primary;
+        margin-right: .5rem;
+        transition: .2s ease;
+    }
+    
+    &__details--btn {
+        background-color: $yellow;
+        transition: .2s ease;
+    }
+}
+

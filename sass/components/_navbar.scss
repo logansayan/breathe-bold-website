@@ -1,0 +1,59 @@
+/* NAVIGATION */
+
+.navbar {
+    background-color: $dark-cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    color: $white-primary;
+
+    &__brand {
+        font-weight: 700;
+        font-size: 3rem;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: $white-primary;
+
+        & {
+            span {
+                color: $yellow;
+            }
+        }
+    }
+
+    &__logo {
+        color: $yellow;
+    }
+    
+    &__toggle {
+        display: none;
+        cursor: pointer;
+    }
+    
+    &__links {
+
+        ul {
+            display: flex;
+        }
+        
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: $white-primary;
+            font-weight: 700;
+            padding: 1.2rem;
+            transition: .2s ease;
+
+            &:hover {
+                background-color: $light-cyan;
+                border-radius: 3px;
+            }
+        }
+    }
+}
