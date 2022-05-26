@@ -11,6 +11,16 @@
         width: 100rem;
         margin-left: 10%;
 
+        @include respond(tab-port) {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @include respond(phone) {
+            justify-content: center;
+            padding: 0 1rem;
+        }
+
         &__phrase {
             font-size: 6rem;
             color: $white-secondary;
@@ -19,12 +29,21 @@
             & span {
                 color: $yellow;
             }
+
+            @include respond(phone) {
+                text-align: center;
+                font-size: 5rem;
+            }
         }
 
         &__description {
             color: $white-primary;
             font-size: 2rem;
             margin-bottom: 1rem;
+
+            @include respond(phone) {
+                text-align: center;
+            }
         }
 
         
@@ -32,6 +51,10 @@
 
     &-btn {
         margin: 2.5rem 0;
+
+        @include respond(phone) {
+            text-align: center;
+        }
 
         &__sign-up,
         &__details {
@@ -48,17 +71,17 @@
             color: $black;
         }
     }
-    &__sign-up {
-        background-color: $dark-cyan;
-        color: $white-primary;
-        margin-right: .5rem;
-        transition: .2s ease;
-    }
-    
-    &__details {
-        background-color: $yellow;
-        transition: .2s ease;
-    }
+        &__sign-up {
+            background-color: $dark-cyan;
+            color: $white-primary;
+            margin-right: .5rem;
+            transition: .2s ease;
+        }
+        
+        &__details {
+            background-color: $yellow;
+            transition: .2s ease;
+        }
     }
 }
 

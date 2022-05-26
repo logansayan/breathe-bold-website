@@ -1,3 +1,3 @@
-$('.toggle-button').click(function () {
-    $('.navbar-links').toggleClass('remove-navbar')
+$('.navbar__toggle').click(function () {
+    $('.navbar__links').toggleClass('navbar__remove')
 })

@@ -1,68 +1,97 @@
 .stories {
     width: 50%;
     margin: 0 auto;
-}
 
-.story {
-    display: flex;
-    margin: 0 auto;
-    box-shadow: 0 .2rem 3rem $black;
-    padding: 1.5rem;
-    border-radius: 10px;
-
-    &:not(:last-child) {
-        margin-bottom: 5rem;
+    @include respond(tab-land) {
+        width: 70%;
     }
 
-    .img-box {
+    .story {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-
-        &__name {
-            position: absolute;
-            z-index: 2;
-            color: white;
-            font-size: 1.5rem;
-            opacity: 0;
-            transform: translateY(5rem);
-            transition: all .3s;
+        margin: 0 auto;
+        box-shadow: 0 .2rem 3rem $black;
+        padding: 1.5rem;
+        border-radius: 10px;
+    
+        @include respond(tab-land) {
+            width: 70%;
         }
 
-        &__img {
-            width: 120px;
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+    
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+    
+            @include respond(tab-port) {
+                margin-bottom: 4rem;
+            }
+        }
+    
+        .img-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
-            position: relative;
-            transition: all .3s;
-        }
-
-        &:hover {
-            .img-box__name {
-                opacity: 1;
-                transform: translateY(0);
+    
+            @include respond(tab-port) {
+                margin-bottom: 2rem;
             }
-
-            .img-box__img {
-                filter: blur(3px) brightness(80%);
+    
+            &__name {
+                position: absolute;
+                z-index: 2;
+                color: white;
+                font-size: 1.5rem;
+                opacity: 0;
+                transform: translateY(5rem);
+                transition: all .3s;
+            }
+    
+            &__img {
+                width: 120px;
+                border-radius: 50%;
+                position: relative;
+                transition: all .3s;
+            }
+    
+            &:hover {
+                .img-box__name {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+    
+                .img-box__img {
+                    filter: blur(3px) brightness(80%);
+                }
             }
         }
-    }
-
-    .text-box {
-        margin-left: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        &__heading {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        
-        &__para {
-            font-size: 1.5rem;
+    
+        .text-box {
+            margin-left: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            @include respond(tab-port) {
+                text-align: center;
+                margin-left: 0;
+            }
+    
+            &__heading {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            &__para {
+                font-size: 1.5rem;
+            }
         }
     }
 }
+
+
 

@@ -8,11 +8,18 @@
 
 html {
     font-size: 62.5%; /* This defines 1rem == 10px */
+    scroll-behavior: smooth;
+
+    @include respond(big-desktop) {
+        font-size: 75%; // This defines 1rem == 12px
+    }
+
+    @include respond(phone) {
+        font-size: 50%; // This defines 1rem == 8px
+    }
 }
 
 body {
     box-sizing: border-box;
     overflow-x: hidden;
-    color: $black;
-    font-family: "Poppins", sans-serif;
 }

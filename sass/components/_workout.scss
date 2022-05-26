@@ -2,24 +2,51 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
     
     &__img {
         border-radius: 3px;
         width: 600px;
         transition: all .4s;
         box-shadow: 0 .1rem 4rem $black;
+
+        @include respond(tab-land) {
+            margin-bottom: 5rem;
+        }
+
+        @include respond(tab-port) {
+            width: 450px;
+        }
+
+        @include respond(phone) {
+            width: 350px;
+        }
     }
     
     &-text {
         width: 40%;
 
+        @include respond(tab-land) {
+            width: 90%;
+        }
+
         &__heading {
             font-weight: 600;
+        }
+
+        &__paragraph {
+            font-size: 1.6rem;
         }
 
         &__items {
             list-style: none;
             columns: 2;
+            font-size: 1.6rem;
 
             & span {
                 font-weight: 600;
@@ -27,4 +54,3 @@
         }
     }
 }
-

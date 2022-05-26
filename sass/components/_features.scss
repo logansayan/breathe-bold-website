@@ -3,6 +3,11 @@
     justify-content: space-around;
     text-align: center;
 
+    @include respond(tab-land) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .feature-card {
         width: 20%;
         padding: 3rem;
@@ -10,6 +15,11 @@
         font-size: 1.5rem;
         border-radius: 5px;
         transition: all .2s;
+
+        @include respond(tab-land) {
+            width: 300px;
+            margin: 2rem;
+        }
 
         &:hover {
             box-shadow: 0 1rem 4rem $black;
@@ -23,6 +33,7 @@
         &__header {
             margin-bottom: 1rem;
             text-transform: capitalize;
+            font-size: 2rem;
         }
 
         &__card-text {

@@ -8,6 +8,11 @@
     padding: 0 3rem;
     color: $white-primary;
 
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     &__brand {
         font-weight: 700;
         font-size: 3rem;
@@ -29,16 +34,48 @@
     &__toggle {
         display: none;
         cursor: pointer;
+
+        @include respond(tab-port) {
+            display: flex;
+            position: absolute;
+            right: 2.5rem;
+            top: 2rem;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__icon {
+        &:hover {
+            transform: scale(1.1);
+            color: $yellow;
+        }
+        
+    }
+
+    &__remove {
+        @include respond(tab-port) {
+            display: none;
+        }
     }
     
     &__links {
 
         ul {
             display: flex;
+
+            @include respond(tab-port) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
         }
         
         li {
             list-style: none;
+
+            @include respond(tab-port) {
+                width: 100%;
+            }
         }
 
         a {
@@ -54,6 +91,17 @@
                 background-color: $light-cyan;
                 border-radius: 3px;
             }
+
+            @include respond(tab-port) {
+                padding: 1.5rem;
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+            padding-bottom: 1.5rem;
         }
     }
 }
