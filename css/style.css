@@ -265,7 +265,7 @@ body {
   margin: 0 auto;
   width: 70%; }
   @media (max-width: 75em) {
-    .workout-text {
+    .workout {
       width: 90%; } }
   .workout-text__heading {
     font-weight: 600; }
@@ -362,11 +362,6 @@ body {
         border-radius: 50%;
         position: relative;
         transition: all .3s; }
-      .stories .story .img-box:hover .img-box__name {
-        opacity: 1;
-        transform: translateY(0); }
-      .stories .story .img-box:hover .img-box__img {
-        filter: blur(3px) brightness(80%); }
     .stories .story .text-box {
       margin-left: 3rem;
       display: flex;
@@ -381,6 +376,14 @@ body {
         margin-bottom: 1rem; }
       .stories .story .text-box__para {
         font-size: 1.5rem; }
+    .stories .story:hover .img-box__name {
+      opacity: 1;
+      transform: translateY(0); }
+    .stories .story:hover .img-box__img {
+      filter: blur(3px) brightness(80%); }
+      @media (max-width: 75em) {
+        .stories .story:hover .img-box__img {
+          filter: inherit; } }
 
 .bg-video {
   position: absolute;
@@ -396,11 +399,68 @@ body {
     width: 100%;
     object-fit: cover; }
 
+.plan {
+  width: 400px;
+  box-shadow: 0 0.5rem 4rem #383838;
+  border-radius: 5px;
+  padding-bottom: 3rem; }
+  .plan__img {
+    width: inherit;
+    border-radius: 5px 5px 0 0; }
+  .plan-info {
+    margin-top: 3rem;
+    width: 80%;
+    margin: 3rem auto 0 auto; }
+    .plan-info__heading {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1rem; }
+    .plan-info__description {
+      font-size: 1.3rem;
+      text-align: center; }
+    .plan-info__summary {
+      display: flex;
+      width: 90%;
+      margin: 2rem auto;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #E1E5F2;
+      padding: 1.5rem 2rem;
+      border-radius: 5px; }
+      .plan-info__summary--time {
+        font-size: 1.7rem; }
+      .plan-info__summary--price {
+        font-size: 1.5rem; }
+      .plan-info__summary--change,
+      .plan-info__summary--change:link .plan-info__summary--change:visited {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #022B3A; }
+    .plan-info__payment {
+      width: 90%;
+      text-align: center;
+      margin: 0 auto; }
+      .plan-info__payment--btn, .plan-info__payment--btn:link, .plan-info__payment--btn:visited {
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        background-color: #022B3A;
+        color: white;
+        transition: all .2s; }
+        .plan-info__payment--btn:hover, .plan-info__payment--btn:link:hover, .plan-info__payment--btn:visited:hover {
+          background-color: #BFDBF7;
+          color: #383838; }
+
 .header,
 .section-about,
 .section-workout,
 .section-features,
-.section-stories {
+.section-stories,
+.section-plans {
   padding: 5rem 1rem;
   margin-bottom: 4rem; }
 
@@ -411,5 +471,3 @@ body {
 
 .section-stories {
   position: relative; }
-
-/* MEDIA QUERIES */
