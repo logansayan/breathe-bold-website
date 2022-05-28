@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import "./abstracts/functions";
 @import "./abstracts/mixins";
@@ -17,7 +17,105 @@
 @import "./components/workout";
 @import "./components/features";
 @import "./components/story";
+@import "./components/bg-video";
 
 @import "./pages/home";
+
+
+
+/* MEDIA QUERIES */
+
+// @media (max-width: 1200px) {
+//     /* SECTION WORKOUT */
+
+
+//     .workout-content {
+//         flex-direction: column;
+//         text-align: center;
+//         justify-content: space-around;
+//     }
+
+//     .workout-text {
+//         width: 90%;
+//     }
+
+//     .workout-img {
+//         margin-bottom: 5rem;
+//     }
+
+//     /* SECTION FEATURES */
+
+//     .features {
+//         flex-wrap: wrap;
+//         justify-content: center;
+//     }
+
+//     .feature-card {
+//         width: 300px;
+//         margin: 2rem;
+//     }
+
+//     /* SECTION FEATURES */
+
+//     .stories {
+//         width: 70%;
+//     }
+
+//     .story-text-div{
+//         width: 90%;
+//     }
+// }
+
+// @media (max-width: 950px) {
+
+
+
+
+
+//     /* SECTION WORKOUT */
+
+//     .workout-img {
+//         width: 450px;
+//     }
+
+//     /* SECTION STORY */
+
+//     .story-text-div {
+//         width: 60%;
+//     }
+// }
+
+// @media (max-width: 600px) {
+
+
+
+//     /* SECTION WORKOUT */
+
+//     .workout-img {
+//         width: 350px;
+//     }
+
+//     /* SECTION STORY */
+
+//     .story {
+//         flex-direction: column;
+//         align-items: center;
+//         width: 90%;
+//     }
+
+//     .story:not(:last-child) {
+//         margin-bottom: 4rem;
+//     }
+
+//     .story-img-div {
+//         margin-bottom: 2rem;
+//     }
+
+//     .story-text-div {
+//         text-align: center;
+//         margin-left: 0;
+//         width: 90%;
+//     }
+// }
 
 

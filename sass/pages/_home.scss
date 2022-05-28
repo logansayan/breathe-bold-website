@@ -4,8 +4,19 @@
 .section-features,
 .section-stories {
     padding: $section-default-padding;
+    margin-bottom: 4rem;
 }
 
 .section-workout {
-    background-color: $very-light-cyan;
+    background-color: $lavendar;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-features {
+    
+}
+
+.section-stories {
+    position: relative;
 }
