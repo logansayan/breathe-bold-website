@@ -1,11 +1,95 @@
 .plan {
-    width: 400px;
+    max-width: 400px;
     box-shadow: 0 .5rem 4rem $black;
     border-radius: 5px;
     padding-bottom: 3rem;
 
+    &:not(:last-child) {
+        margin-right: 6rem;
+
+        @include respond(tab-land) {
+            margin-right: 0;
+            margin-bottom: 6rem;
+        }
+    }
+
+    
+    &--1 {
+        .plan-info {
+            &__summary {
+                background-color: $green;
+                box-shadow: 0 .5rem 2rem $green;
+            }
+
+            &__heading {
+                color: $green;
+            }
+
+            &__payment--btn:hover {
+                background-color: $green;
+                border: 1px solid $green;
+                color: $white-primary;
+            }
+        }
+        
+        .plan__img {
+            background-image: url(../img/card-1.jpg);
+        }
+    }
+
+    &--2 {
+        .plan-info {
+            &__summary {
+                background-color: $orange;
+                box-shadow: 0 .5rem 2rem $orange;
+                position: relative;
+            }
+
+            &__heading {
+                color: $orange;
+            }
+
+            &__payment--btn:hover {
+                background-color: $orange;
+                border: 1px solid $orange;
+                color: $white-primary;
+            }
+        }
+        
+        .plan__img {
+            background-image: url(../img/card-2.jpg);
+        }
+    }
+
+    &--3 {
+
+        .plan-info {
+            &__summary {
+                background-color: $blue;
+                box-shadow: 0 .5rem 2rem $blue;
+            }
+
+            &__heading {
+                color: $blue;
+            }
+
+            &__payment--btn:hover {
+                background-color: $blue;
+                border: 1px solid $blue;
+                color: $white-primary;
+            }
+        }
+
+        .plan__img {
+            background-image: url(../img/card-3.jpg);
+        }
+    }
+
     &__img {
-        width: inherit;
+        max-width: inherit;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
         border-radius: 5px 5px 0 0;
     }
 
@@ -34,6 +118,7 @@
             background-color: $lavendar;
             padding: 1.5rem 2rem;
             border-radius: 5px;
+            color: $white-primary;
 
             &--details {
 
@@ -51,8 +136,7 @@
             &--change:link
             &--change:visited {
                 font-size: 1.3rem;
-                font-weight: 600;
-                color: $dark-cyan;
+                color: $white-primary;
             }
         }
 
@@ -71,14 +155,10 @@
                 text-decoration: none;
                 border-radius: 5px;
                 font-weight: 600;
-                background-color: $dark-cyan;
-                color: white;
+                background-color: $white-primary;
+                color: $black;
+                border: 1px solid $black;
                 transition: all .2s;
-
-                &:hover {
-                    background-color: $very-light-cyan;
-                    color: $black;
-                }
             }
         }
     }

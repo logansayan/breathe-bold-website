@@ -224,7 +224,10 @@ body {
       text-transform: capitalize;
       font-family: 'Poppins', sans-serif;
       cursor: pointer;
-      font-weight: 700; }
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #383838; }
       .header-btn__sign-up:hover, .header-btn__details:hover {
         background-color: #FFF;
         color: #383838; }
@@ -400,12 +403,55 @@ body {
     object-fit: cover; }
 
 .plan {
-  width: 400px;
+  max-width: 400px;
   box-shadow: 0 0.5rem 4rem #383838;
   border-radius: 5px;
   padding-bottom: 3rem; }
+  .plan:not(:last-child) {
+    margin-right: 6rem; }
+    @media (max-width: 75em) {
+      .plan:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 6rem; } }
+  .plan--1 .plan-info__summary {
+    background-color: #3dc46d;
+    box-shadow: 0 0.5rem 2rem #3dc46d; }
+  .plan--1 .plan-info__heading {
+    color: #3dc46d; }
+  .plan--1 .plan-info__payment--btn:hover {
+    background-color: #3dc46d;
+    border: 1px solid #3dc46d;
+    color: #FFF; }
+  .plan--1 .plan__img {
+    background-image: url(../img/card-1.jpg); }
+  .plan--2 .plan-info__summary {
+    background-color: #EE5007;
+    box-shadow: 0 0.5rem 2rem #EE5007;
+    position: relative; }
+  .plan--2 .plan-info__heading {
+    color: #EE5007; }
+  .plan--2 .plan-info__payment--btn:hover {
+    background-color: #EE5007;
+    border: 1px solid #EE5007;
+    color: #FFF; }
+  .plan--2 .plan__img {
+    background-image: url(../img/card-2.jpg); }
+  .plan--3 .plan-info__summary {
+    background-color: #3c61db;
+    box-shadow: 0 0.5rem 2rem #3c61db; }
+  .plan--3 .plan-info__heading {
+    color: #3c61db; }
+  .plan--3 .plan-info__payment--btn:hover {
+    background-color: #3c61db;
+    border: 1px solid #3c61db;
+    color: #FFF; }
+  .plan--3 .plan__img {
+    background-image: url(../img/card-3.jpg); }
   .plan__img {
-    width: inherit;
+    max-width: inherit;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
     border-radius: 5px 5px 0 0; }
   .plan-info {
     margin-top: 3rem;
@@ -426,7 +472,8 @@ body {
       align-items: center;
       background-color: #E1E5F2;
       padding: 1.5rem 2rem;
-      border-radius: 5px; }
+      border-radius: 5px;
+      color: #FFF; }
       .plan-info__summary--time {
         font-size: 1.7rem; }
       .plan-info__summary--price {
@@ -434,8 +481,7 @@ body {
       .plan-info__summary--change,
       .plan-info__summary--change:link .plan-info__summary--change:visited {
         font-size: 1.3rem;
-        font-weight: 600;
-        color: #022B3A; }
+        color: #FFF; }
     .plan-info__payment {
       width: 90%;
       text-align: center;
@@ -448,12 +494,10 @@ body {
         text-decoration: none;
         border-radius: 5px;
         font-weight: 600;
-        background-color: #022B3A;
-        color: white;
+        background-color: #FFF;
+        color: #383838;
+        border: 1px solid #383838;
         transition: all .2s; }
-        .plan-info__payment--btn:hover, .plan-info__payment--btn:link:hover, .plan-info__payment--btn:visited:hover {
-          background-color: #BFDBF7;
-          color: #383838; }
 
 .header,
 .section-about,
@@ -471,3 +515,11 @@ body {
 
 .section-stories {
   position: relative; }
+
+.section-plans {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 75em) {
+    .section-plans {
+      flex-direction: column;
+      align-items: center; } }

@@ -20,7 +20,7 @@
             <div class="navbar__links navbar__remove">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#section-about">About</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Trainer</a></li>
                     <li><a href="#">Review</a></li>
@@ -30,22 +30,22 @@
         </nav>
     </nav>
 
-    <header class="header">
+    <header id="header" class="header">
         <div class="header-content">
             <h1 class="header-content__phrase">
-                Inhale the <span>Future</span> Exhale the past.
+                Inhale the <span>Future</span> Exhale the <span>past</span>.
             </h1>
             <p class="header-content__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, modi. Sapiente harum labore neque voluptate enim hic error. Nulla, possimus.</p>
             
             <div class="header-btn">
-                <button class="header-btn__sign-up">sign up</button>
-                <button class="header-btn__details">details</button>
+                <a href="#section-plans" class="header-btn__sign-up">Discover plans</a>
+                <a href="#" class="header-btn__details">Follow</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="section-about section-default-padding">    
+        <section id="section-about" class="section-about">    
             <div class="about">
                 <div class="about-item">
                     <h3 class="about-item__count">325</h3>
@@ -66,7 +66,7 @@
             </div>
         </section>
 
-        <section class="section-workout section-default-padding">
+        <section id="section-workout" class="section-workout">
             <div class="heading-container">
                 <h2 class="heading-primary u-margin-bottom-huge">Our trainers will take care of you</h2>
             </div>
@@ -100,7 +100,7 @@
         <!-- REVIEWS -->
         <!-- should make navbar fixed later -->
 
-        <section class="section-features section-default-padding">
+        <section id="section-features" class="section-features">
             <div class="heading-container">
                 <h2 class="heading-primary u-margin-bottom-big">Benifits we are offering</h2>
             </div>
@@ -129,7 +129,7 @@
             </div>
         </section>
 
-        <section class="section-stories section-default-padding">
+        <section id="section-stories" class="section-stories">
 
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
@@ -179,22 +179,60 @@
             </div>
         </section>
 
-        <section class="section-plans">
-            <div class="plan">
-                <img src="./img/yoga-1.jpg" alt="Img" class="plan__img">
+        <section id="section-plans" class="section-plans">
+            <div class="plan plan--1">
+                <div class="plan__img plan__img--1"></div>
                 <div class="plan-info">
                     <h3 class="plan-info__heading">Beginner</h3>
                     <p class="plan-info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam consectetur debitis amet eligendi beatae vero sit error harum ducimus?</p>
                     
                     <div class="plan-info__summary">
                         <div class="plan-info__summary--details">
-                            <h4 class="plan-info__summary--time">Monthly Plan</h4>
-                            <p class="plan-info__summary--price">$29.99/month</p>
+                            <h4 class="plan-info__summary--time">Basic Plan</h4>
+                            <p class="plan-info__summary--price">$24.99/3 month</p>
                         </div>
-                        <a href="#" class="plan-info__summary--change">Change</a>
+                        <a href="#" class="plan-info__summary--change"><i class="fa-solid fa-circle-info fa-2x"></i></a>
                     </div>
                     <div class="plan-info__payment">
-                        <a href="#" class="plan-info__payment--btn">Buy now</a>
+                        <a href="#" class="plan-info__payment--btn">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan plan--2">
+                <div class="plan__img plan__img--2"></div>
+                <div class="plan-info">
+                    <h3 class="plan-info__heading">Moderate</h3>
+                    <p class="plan-info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam consectetur debitis amet eligendi beatae vero sit error harum ducimus?</p>
+                    
+                    <div class="plan-info__summary">
+                        <div class="plan-info__summary--details">
+                            <h4 class="plan-info__summary--time">Member Plan</h4>
+                            <p class="plan-info__summary--price">$39.99/3 month</p>
+                        </div>
+                        <a href="#" class="plan-info__summary--change"><i class="fa-solid fa-circle-info fa-2x"></i></a>
+                    </div>
+                    <div class="plan-info__payment">
+                        <a href="#" class="plan-info__payment--btn">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plan plan--3">
+                <div class="plan__img plan__img--3"></div>
+                <div class="plan-info">
+                    <h3 class="plan-info__heading">Hardcore</h3>
+                    <p class="plan-info__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam consectetur debitis amet eligendi beatae vero sit error harum ducimus?</p>
+                    
+                    <div class="plan-info__summary">
+                        <div class="plan-info__summary--details">
+                            <h4 class="plan-info__summary--time">Focus Plan</h4>
+                            <p class="plan-info__summary--price">$59.99/3 month</p>
+                        </div>
+                        <a href="#" class="plan-info__summary--change"><i class="fa-solid fa-circle-info fa-2x"></i></a>
+                    </div>
+                    <div class="plan-info__payment">
+                        <a href="#" class="plan-info__payment--btn">Subscribe</a>
                     </div>
                 </div>
             </div>

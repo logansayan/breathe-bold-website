@@ -14,10 +14,16 @@
     background-size: cover;
 }
 
-.section-features {
-    
-}
-
 .section-stories {
     position: relative;
+}
+
+.section-plans {
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
