@@ -1,3 +1,13 @@
+hr {
+    border: 10px solid $black;
+    border-style: dotted;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 20%;
+    margin: 0 auto;
+}
+
 .header,
 .section-about,
 .section-workout,
@@ -12,8 +22,16 @@
 }
 
 .section-features {
-    
     padding-bottom: 5rem;
+    // background-image: linear-gradient(to right bottom, rgba($dark-cyan, .8) 100%, rgba($white-primary, .8)), url('../img/hero-2.jpg');
+    // background-size: cover;
+    // color: $white-primary;
+    // background-position: bottom;
+
+    // .heading-primary {
+    //     color: rgba($white-primary, .7);
+    //     text-shadow: 0 .5rem 4rem rgba($white-primary, .5);
+    // }
 }
 
 .section-workout {

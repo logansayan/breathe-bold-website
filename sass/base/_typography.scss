@@ -21,7 +21,6 @@ body {
     text-align: center;
     transition: all .2s;
     backface-visibility: hidden;
-    color: $black;
 
     &:hover {
         transform: scale(1.01);
