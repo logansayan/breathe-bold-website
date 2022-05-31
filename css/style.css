@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*
 0 - 600px: Phone
 600px - 950px: Tablet portrait
@@ -47,19 +47,21 @@ body {
   text-align: center; }
 
 .heading-primary {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
   transition: all .2s;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  color: #383838; }
   .heading-primary:hover {
     transform: scale(1.01); }
 
 .heading-secondary {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   font-size: 3rem;
   text-transform: capitalize; }
   @media (max-width: 59.375em) {
@@ -163,7 +165,8 @@ body {
     padding: 1.2rem;
     transition: .2s ease; }
     .navbar__links a:hover {
-      background-color: #1F7A8C;
+      background-color: #FFF;
+      color: #383838;
       border-radius: 3px; }
     @media (max-width: 59.375em) {
       .navbar__links a {
@@ -177,7 +180,7 @@ body {
 
 .header {
   height: 90vh;
-  background-image: url("../img/hero-overlay.jpg");
+  background-image: linear-gradient(rgba(2, 43, 58, 0.5), rgba(31, 122, 140, 0.5)), url("../img/hero.jpg");
   background-size: cover;
   background-position: bottom;
   display: flex;
@@ -252,7 +255,6 @@ body {
     border-radius: 1rem;
     width: 200px;
     margin: 1rem;
-    background-color: #E1E5F2;
     transition: all .2s;
     box-shadow: 0 0.5rem 1rem #383838;
     backface-visibility: hidden; }
@@ -284,7 +286,8 @@ body {
 .features {
   display: flex;
   justify-content: space-around;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5rem; }
   @media (max-width: 75em) {
     .features {
       flex-wrap: wrap;
@@ -402,102 +405,109 @@ body {
     width: 100%;
     object-fit: cover; }
 
-.plan {
-  max-width: 400px;
-  box-shadow: 0 0.5rem 4rem #383838;
-  border-radius: 5px;
-  padding-bottom: 3rem; }
-  .plan:not(:last-child) {
-    margin-right: 6rem; }
-    @media (max-width: 75em) {
-      .plan:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 6rem; } }
-  .plan--1 .plan-info__summary {
-    background-color: #3dc46d;
-    box-shadow: 0 0.5rem 2rem #3dc46d; }
-  .plan--1 .plan-info__heading {
-    color: #3dc46d; }
-  .plan--1 .plan-info__payment--btn:hover {
-    background-color: #3dc46d;
-    border: 1px solid #3dc46d;
-    color: #FFF; }
-  .plan--1 .plan__img {
-    background-image: url(../img/card-1.jpg); }
-  .plan--2 .plan-info__summary {
-    background-color: #EE5007;
-    box-shadow: 0 0.5rem 2rem #EE5007;
-    position: relative; }
-  .plan--2 .plan-info__heading {
-    color: #EE5007; }
-  .plan--2 .plan-info__payment--btn:hover {
-    background-color: #EE5007;
-    border: 1px solid #EE5007;
-    color: #FFF; }
-  .plan--2 .plan__img {
-    background-image: url(../img/card-2.jpg); }
-  .plan--3 .plan-info__summary {
-    background-color: #3c61db;
-    box-shadow: 0 0.5rem 2rem #3c61db; }
-  .plan--3 .plan-info__heading {
-    color: #3c61db; }
-  .plan--3 .plan-info__payment--btn:hover {
-    background-color: #3c61db;
-    border: 1px solid #3c61db;
-    color: #FFF; }
-  .plan--3 .plan__img {
-    background-image: url(../img/card-3.jpg); }
-  .plan__img {
-    max-width: inherit;
-    height: 250px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px 5px 0 0; }
-  .plan-info {
-    margin-top: 3rem;
-    width: 80%;
-    margin: 3rem auto 0 auto; }
-    .plan-info__heading {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 1rem; }
-    .plan-info__description {
-      font-size: 1.3rem;
-      text-align: center; }
-    .plan-info__summary {
-      display: flex;
-      width: 90%;
-      margin: 2rem auto;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #E1E5F2;
-      padding: 1.5rem 2rem;
-      border-radius: 5px;
+.plans {
+  display: flex;
+  justify-content: center; }
+  @media (max-width: 75em) {
+    .plans {
+      flex-direction: column;
+      align-items: center; } }
+  .plans .plan {
+    max-width: 400px;
+    box-shadow: 0 0.5rem 4rem #383838;
+    border-radius: 5px;
+    padding-bottom: 3rem; }
+    .plans .plan:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 75em) {
+        .plans .plan:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    .plans .plan--1 .plan-info__summary {
+      background-color: #3dc46d;
+      box-shadow: 0 0.5rem 2rem #3dc46d; }
+    .plans .plan--1 .plan-info__heading {
+      color: #3dc46d; }
+    .plans .plan--1 .plan-info__payment--btn:hover {
+      background-color: #3dc46d;
+      border: 1px solid #3dc46d;
       color: #FFF; }
-      .plan-info__summary--time {
-        font-size: 1.7rem; }
-      .plan-info__summary--price {
-        font-size: 1.5rem; }
-      .plan-info__summary--change,
-      .plan-info__summary--change:link .plan-info__summary--change:visited {
+    .plans .plan--1 .plan__img {
+      background-image: url(../img/card-1.jpg); }
+    .plans .plan--2 .plan-info__summary {
+      background-color: #EE5007;
+      box-shadow: 0 0.5rem 2rem #EE5007;
+      position: relative; }
+    .plans .plan--2 .plan-info__heading {
+      color: #EE5007; }
+    .plans .plan--2 .plan-info__payment--btn:hover {
+      background-color: #EE5007;
+      border: 1px solid #EE5007;
+      color: #FFF; }
+    .plans .plan--2 .plan__img {
+      background-image: url(../img/card-2.jpg); }
+    .plans .plan--3 .plan-info__summary {
+      background-color: #3c61db;
+      box-shadow: 0 0.5rem 2rem #3c61db; }
+    .plans .plan--3 .plan-info__heading {
+      color: #3c61db; }
+    .plans .plan--3 .plan-info__payment--btn:hover {
+      background-color: #3c61db;
+      border: 1px solid #3c61db;
+      color: #FFF; }
+    .plans .plan--3 .plan__img {
+      background-image: url(../img/card-3.jpg); }
+    .plans .plan__img {
+      max-width: inherit;
+      height: 250px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 5px 5px 0 0; }
+    .plans .plan-info {
+      margin-top: 3rem;
+      width: 80%;
+      margin: 3rem auto 0 auto; }
+      .plans .plan-info__heading {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1rem; }
+      .plans .plan-info__description {
         font-size: 1.3rem;
-        color: #FFF; }
-    .plan-info__payment {
-      width: 90%;
-      text-align: center;
-      margin: 0 auto; }
-      .plan-info__payment--btn, .plan-info__payment--btn:link, .plan-info__payment--btn:visited {
-        display: block;
-        width: 100%;
-        padding: 1rem 2rem;
-        font-size: 1.3rem;
-        text-decoration: none;
+        text-align: center; }
+      .plans .plan-info__summary {
+        display: flex;
+        width: 90%;
+        margin: 2rem auto;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #E1E5F2;
+        padding: 1.5rem 2rem;
         border-radius: 5px;
-        font-weight: 600;
-        background-color: #FFF;
-        color: #383838;
-        border: 1px solid #383838;
-        transition: all .2s; }
+        color: #FFF; }
+        .plans .plan-info__summary--time {
+          font-size: 1.7rem; }
+        .plans .plan-info__summary--price {
+          font-size: 1.5rem; }
+        .plans .plan-info__summary--change,
+        .plans .plan-info__summary--change:link .plans .plan-info__summary--change:visited {
+          font-size: 1.3rem;
+          color: #FFF; }
+      .plans .plan-info__payment {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto; }
+        .plans .plan-info__payment--btn, .plans .plan-info__payment--btn:link, .plans .plan-info__payment--btn:visited {
+          display: block;
+          width: 100%;
+          padding: 1rem 2rem;
+          font-size: 1.3rem;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: 600;
+          background-color: #FFF;
+          color: #383838;
+          border: 1px solid #383838;
+          transition: all .2s; }
 
 .header,
 .section-about,
@@ -505,8 +515,11 @@ body {
 .section-features,
 .section-stories,
 .section-plans {
-  padding: 5rem 1rem;
-  margin-bottom: 4rem; }
+  padding: 10rem 1rem; }
+
+.section-features {
+  background-color: #E1E5F2;
+  padding-bottom: 5rem; }
 
 .section-workout {
   background-color: #E1E5F2;
@@ -515,11 +528,3 @@ body {
 
 .section-stories {
   position: relative; }
-
-.section-plans {
-  display: flex;
-  justify-content: center; }
-  @media (max-width: 75em) {
-    .section-plans {
-      flex-direction: column;
-      align-items: center; } }

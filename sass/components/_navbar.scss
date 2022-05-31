@@ -88,7 +88,8 @@
             transition: .2s ease;
 
             &:hover {
-                background-color: $light-cyan;
+                background-color: $white-primary;
+                color: $black;
                 border-radius: 3px;
             }
 

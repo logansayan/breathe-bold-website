@@ -1,6 +1,7 @@
 .header {
     height: 90vh;
-    background-image: url("../img/hero-overlay.jpg");
+    background-image: linear-gradient(rgba($dark-cyan, .5), rgba($light-cyan, .5)), url("../img/hero.jpg");
+
     background-size: cover;
     background-position: bottom;
     display: flex;

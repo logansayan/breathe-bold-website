@@ -5,7 +5,11 @@
 .section-stories,
 .section-plans {
     padding: $section-default-padding;
-    margin-bottom: 4rem;
+}
+
+.section-features {
+    background-color: $lavendar;
+    padding-bottom: 5rem;
 }
 
 .section-workout {
@@ -19,11 +23,5 @@
 }
 
 .section-plans {
-    display: flex;
-    justify-content: center;
-
-    @include respond(tab-land) {
-        flex-direction: column;
-        align-items: center;
-    }
+    
 }

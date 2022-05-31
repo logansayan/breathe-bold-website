@@ -1,164 +1,174 @@
-.plan {
-    max-width: 400px;
-    box-shadow: 0 .5rem 4rem $black;
-    border-radius: 5px;
-    padding-bottom: 3rem;
+.plans {
+    display: flex;
+    justify-content: center;
 
-    &:not(:last-child) {
-        margin-right: 6rem;
-
-        @include respond(tab-land) {
-            margin-right: 0;
-            margin-bottom: 6rem;
-        }
+    @include respond(tab-land) {
+        flex-direction: column;
+        align-items: center;
     }
 
+    .plan {
+        max-width: 400px;
+        box-shadow: 0 .5rem 4rem $black;
+        border-radius: 5px;
+        padding-bottom: 3rem;
     
-    &--1 {
-        .plan-info {
-            &__summary {
-                background-color: $green;
-                box-shadow: 0 .5rem 2rem $green;
-            }
-
-            &__heading {
-                color: $green;
-            }
-
-            &__payment--btn:hover {
-                background-color: $green;
-                border: 1px solid $green;
-                color: $white-primary;
+        &:not(:last-child) {
+            margin-right: 6rem;
+    
+            @include respond(tab-land) {
+                margin-right: 0;
+                margin-bottom: 6rem;
             }
         }
+    
         
-        .plan__img {
-            background-image: url(../img/card-1.jpg);
-        }
-    }
-
-    &--2 {
-        .plan-info {
-            &__summary {
-                background-color: $orange;
-                box-shadow: 0 .5rem 2rem $orange;
-                position: relative;
+        &--1 {
+            .plan-info {
+                &__summary {
+                    background-color: $green;
+                    box-shadow: 0 .5rem 2rem $green;
+                }
+    
+                &__heading {
+                    color: $green;
+                }
+    
+                &__payment--btn:hover {
+                    background-color: $green;
+                    border: 1px solid $green;
+                    color: $white-primary;
+                }
             }
-
+            
+            .plan__img {
+                background-image: url(../img/card-1.jpg);
+            }
+        }
+    
+        &--2 {
+            .plan-info {
+                &__summary {
+                    background-color: $orange;
+                    box-shadow: 0 .5rem 2rem $orange;
+                    position: relative;
+                }
+    
+                &__heading {
+                    color: $orange;
+                }
+    
+                &__payment--btn:hover {
+                    background-color: $orange;
+                    border: 1px solid $orange;
+                    color: $white-primary;
+                }
+            }
+            
+            .plan__img {
+                background-image: url(../img/card-2.jpg);
+            }
+        }
+    
+        &--3 {
+    
+            .plan-info {
+                &__summary {
+                    background-color: $blue;
+                    box-shadow: 0 .5rem 2rem $blue;
+                }
+    
+                &__heading {
+                    color: $blue;
+                }
+    
+                &__payment--btn:hover {
+                    background-color: $blue;
+                    border: 1px solid $blue;
+                    color: $white-primary;
+                }
+            }
+    
+            .plan__img {
+                background-image: url(../img/card-3.jpg);
+            }
+        }
+    
+        &__img {
+            max-width: inherit;
+            height: 250px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px 5px 0 0;
+        }
+    
+        &-info {
+            margin-top: 3rem;
+            width: 80%;
+            margin: 3rem auto 0 auto;
+    
             &__heading {
-                color: $orange;
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 1rem;
             }
-
-            &__payment--btn:hover {
-                background-color: $orange;
-                border: 1px solid $orange;
-                color: $white-primary;
+    
+            &__description {
+                font-size: 1.3rem;
+                text-align: center;
             }
-        }
-        
-        .plan__img {
-            background-image: url(../img/card-2.jpg);
-        }
-    }
-
-    &--3 {
-
-        .plan-info {
+    
             &__summary {
-                background-color: $blue;
-                box-shadow: 0 .5rem 2rem $blue;
-            }
-
-            &__heading {
-                color: $blue;
-            }
-
-            &__payment--btn:hover {
-                background-color: $blue;
-                border: 1px solid $blue;
-                color: $white-primary;
-            }
-        }
-
-        .plan__img {
-            background-image: url(../img/card-3.jpg);
-        }
-    }
-
-    &__img {
-        max-width: inherit;
-        height: 250px;
-        background-position: center;
-        background-size: cover;
-        border-radius: 5px 5px 0 0;
-    }
-
-    &-info {
-        margin-top: 3rem;
-        width: 80%;
-        margin: 3rem auto 0 auto;
-
-        &__heading {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        &__description {
-            font-size: 1.3rem;
-            text-align: center;
-        }
-
-        &__summary {
-            display: flex;
-            width: 90%;
-            margin: 2rem auto;
-            justify-content: space-between;
-            align-items: center;
-            background-color: $lavendar;
-            padding: 1.5rem 2rem;
-            border-radius: 5px;
-            color: $white-primary;
-
-            &--details {
-
-            }
-
-            &--time {
-                font-size: 1.7rem;
-            }
-
-            &--price {
-                font-size: 1.5rem;
-            }
-
-            &--change,
-            &--change:link
-            &--change:visited {
-                font-size: 1.3rem;
-                color: $white-primary;
-            }
-        }
-
-        &__payment {
-            width: 90%;
-            text-align: center;
-            margin: 0 auto;
-
-            &--btn,
-            &--btn:link,
-            &--btn:visited {
-                display: block;
-                width: 100%;
-                padding: 1rem 2rem;
-                font-size: 1.3rem;
-                text-decoration: none;
+                display: flex;
+                width: 90%;
+                margin: 2rem auto;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $lavendar;
+                padding: 1.5rem 2rem;
                 border-radius: 5px;
-                font-weight: 600;
-                background-color: $white-primary;
-                color: $black;
-                border: 1px solid $black;
-                transition: all .2s;
+                color: $white-primary;
+    
+                &--details {
+    
+                }
+    
+                &--time {
+                    font-size: 1.7rem;
+                }
+    
+                &--price {
+                    font-size: 1.5rem;
+                }
+    
+                &--change,
+                &--change:link
+                &--change:visited {
+                    font-size: 1.3rem;
+                    color: $white-primary;
+                }
+            }
+    
+            &__payment {
+                width: 90%;
+                text-align: center;
+                margin: 0 auto;
+    
+                &--btn,
+                &--btn:link,
+                &--btn:visited {
+                    display: block;
+                    width: 100%;
+                    padding: 1rem 2rem;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    background-color: $white-primary;
+                    color: $black;
+                    border: 1px solid $black;
+                    transition: all .2s;
+                }
             }
         }
     }
