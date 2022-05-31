@@ -7,13 +7,16 @@
     padding: $section-default-padding;
 }
 
+.section-about {
+    // background-color: $white-secondary;
+}
+
 .section-features {
-    background-color: $lavendar;
+    
     padding-bottom: 5rem;
 }
 
 .section-workout {
-    background-color: $lavendar;
     background-position: center;
     background-size: cover;
 }
