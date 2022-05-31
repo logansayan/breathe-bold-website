@@ -98,9 +98,11 @@
 
             .img-box__img {
                 filter: blur(3px) brightness(80%);
+                transform: scale(.9);
 
                 @include respond(tab-land) {
                     filter: inherit;
+                    transform: inherit;
                 }
             }
         }

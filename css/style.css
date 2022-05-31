@@ -386,10 +386,12 @@ body {
       opacity: 1;
       transform: translateY(0); }
     .stories .story:hover .img-box__img {
-      filter: blur(3px) brightness(80%); }
+      filter: blur(3px) brightness(80%);
+      transform: scale(0.9); }
       @media (max-width: 75em) {
         .stories .story:hover .img-box__img {
-          filter: inherit; } }
+          filter: inherit;
+          transform: inherit; } }
 
 .bg-video {
   position: absolute;
@@ -516,7 +518,7 @@ hr {
   border-right: 0;
   border-left: 0;
   width: 20%;
-  margin: 0 auto; }
+  margin: 2rem auto; }
 
 .header,
 .section-about,
