@@ -13,7 +13,8 @@ hr {
 .section-workout,
 .section-features,
 .section-stories,
-.section-plans {
+.section-plans,
+.section-contact {
     padding: $section-default-padding;
 }
 
@@ -43,6 +44,15 @@ hr {
     position: relative;
 }
 
-.section-plans {
-    
+
+.section-contact {
+    background-image: linear-gradient(to right bottom, rgba($green, .8), rgba($dark-cyan, .8)), url(../img/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $white-primary;
+
+    .heading-primary {
+        color: rgba($white-primary, .9);
+        text-shadow: 0 .5rem 4rem rgba($white-primary, .5);
+    }
 }

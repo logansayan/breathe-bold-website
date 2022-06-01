@@ -511,6 +511,49 @@ body {
           border: 1px solid #383838;
           transition: all .2s; }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .contact__form {
+    width: 50%; }
+    @media (max-width: 59.375em) {
+      .contact__form {
+        width: 90%; } }
+  .contact .form {
+    text-align: center; }
+    .contact .form__group:not(:last-child) {
+      margin-bottom: 2rem; }
+    .contact .form__input {
+      font-size: 1.5rem;
+      font-family: inherit;
+      color: inherit;
+      padding: 1.5rem 2rem;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: none;
+      border-bottom: 3px solid transparent;
+      width: 100%;
+      display: block;
+      transition: all .3s;
+      outline: none;
+      resize: none; }
+      .contact .form__input:focus {
+        border-bottom: 3px solid #FFF;
+        background-color: rgba(255, 255, 255, 0.6); }
+    .contact .form__submit {
+      width: 100%;
+      padding: 1rem 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      color: #383838;
+      font-family: inherit;
+      transition: all .3s; }
+      .contact .form__submit:hover {
+        background-color: #FFF; }
+
 hr {
   border: 10px solid #383838;
   border-style: dotted;
@@ -525,7 +568,8 @@ hr {
 .section-workout,
 .section-features,
 .section-stories,
-.section-plans {
+.section-plans,
+.section-contact {
   padding: 10rem 1rem; }
 
 .section-features {
@@ -537,3 +581,12 @@ hr {
 
 .section-stories {
   position: relative; }
+
+.section-contact {
+  background-image: linear-gradient(to right bottom, rgba(61, 196, 109, 0.8), rgba(2, 43, 58, 0.8)), url(../img/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #FFF; }
+  .section-contact .heading-primary {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0.5rem 4rem rgba(255, 255, 255, 0.5); }
