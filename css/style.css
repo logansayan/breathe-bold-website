@@ -177,6 +177,41 @@ body {
       width: 100%;
       padding-bottom: 1.5rem; } }
 
+.footer {
+  text-align: center;
+  font-size: 1.5rem; }
+  .footer__logo {
+    font-size: 10rem;
+    margin-bottom: 5rem; }
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 5rem;
+    transition: all .2s;
+    padding-top: 2rem;
+    border-top: 1px solid #383838; }
+    .footer__links li:not(:last-child) {
+      margin-right: 2rem; }
+    .footer__links a,
+    .footer__links a:visited,
+    .footer__links a:link {
+      text-decoration: none;
+      color: inherit;
+      text-transform: uppercase; }
+      .footer__links a:hover,
+      .footer__links a:visited:hover,
+      .footer__links a:link:hover {
+        text-decoration: underline; }
+  .footer__text {
+    width: 80%;
+    margin: 0 auto 8rem auto; }
+    @media (max-width: 37.5em) {
+      .footer__text {
+        width: 100%; } }
+    .footer__text a {
+      color: #383838; }
+
 .header {
   height: 90vh;
   background-image: linear-gradient(rgba(2, 43, 58, 0.5), rgba(31, 122, 140, 0.5)), url("../img/hero.jpg");
@@ -426,13 +461,13 @@ body {
           margin-right: 0;
           margin-bottom: 6rem; } }
     .plans .plan--1 .plan-info__summary {
-      background-color: #3dc46d;
-      box-shadow: 0 0.5rem 2rem #3dc46d; }
+      background-color: #3DC46D;
+      box-shadow: 0 0.5rem 2rem #3DC46D; }
     .plans .plan--1 .plan-info__heading {
-      color: #3dc46d; }
+      color: #3DC46D; }
     .plans .plan--1 .plan-info__payment--btn:hover {
-      background-color: #3dc46d;
-      border: 1px solid #3dc46d;
+      background-color: #3DC46D;
+      border: 1px solid #3DC46D;
       color: #FFF; }
     .plans .plan--1 .plan__img {
       background-image: url(../img/card-1.jpg); }
@@ -449,13 +484,13 @@ body {
     .plans .plan--2 .plan__img {
       background-image: url(../img/card-2.jpg); }
     .plans .plan--3 .plan-info__summary {
-      background-color: #3c61db;
-      box-shadow: 0 0.5rem 2rem #3c61db; }
+      background-color: #3C61DB;
+      box-shadow: 0 0.5rem 2rem #3C61DB; }
     .plans .plan--3 .plan-info__heading {
-      color: #3c61db; }
+      color: #3C61DB; }
     .plans .plan--3 .plan-info__payment--btn:hover {
-      background-color: #3c61db;
-      border: 1px solid #3c61db;
+      background-color: #3C61DB;
+      border: 1px solid #3C61DB;
       color: #FFF; }
     .plans .plan--3 .plan__img {
       background-image: url(../img/card-3.jpg); }
@@ -569,7 +604,8 @@ hr {
 .section-features,
 .section-stories,
 .section-plans,
-.section-contact {
+.section-contact,
+.footer {
   padding: 10rem 1rem; }
 
 .section-features {

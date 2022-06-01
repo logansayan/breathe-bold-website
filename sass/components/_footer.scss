@@ -1,0 +1,49 @@
+.footer {
+    text-align: center;
+    font-size: 1.5rem;
+    
+    &__logo {
+        font-size: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 5rem;
+        transition: all .2s;
+        padding-top: 2rem;
+        border-top: 1px solid $black;
+
+        li:not(:last-child) {
+            margin-right: 2rem;
+        }
+        
+        a,
+        a:visited,
+        a:link {
+            text-decoration: none;
+            color: inherit;
+            text-transform: uppercase;
+
+            &:hover {
+                text-decoration: underline;
+                
+            }
+        }
+    }
+
+    &__text {
+        width: 80%;
+        margin: 0 auto 8rem auto;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        a {
+            color: $black;
+        }
+    }
+}
