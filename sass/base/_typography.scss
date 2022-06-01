@@ -13,7 +13,7 @@ body {
 }
 
 .heading-primary {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display: inline-block;
     font-size: 4rem;
     font-weight: 900;
@@ -21,19 +21,22 @@ body {
     text-align: center;
     transition: all .2s;
     backface-visibility: hidden;
+    padding: 1rem;
+    border-bottom: 3px solid;
+    border-color: inherit;
+    // border-style: double;
 
     &:hover {
         transform: scale(1.01);
     }
 
-    // @include respond(tab-port) {
-    //     font-size: 3.5rem;
-    // }
+    @include respond(tab-port) {
+        font-size: 3.5rem;
+        border: none;
+    }
 }
 
 .heading-secondary {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
     font-size: 3rem;
     text-transform: capitalize;
 
