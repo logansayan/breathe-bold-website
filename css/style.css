@@ -213,7 +213,7 @@ body {
     margin: 0 auto 8rem auto; }
     @media (max-width: 37.5em) {
       .footer__text {
-        width: 100%; } }
+        width: 90%; } }
     .footer__text a {
       color: #383838; }
   .footer__copyright {
@@ -458,7 +458,7 @@ body {
       align-items: center; } }
   .plans .plan {
     max-width: 400px;
-    box-shadow: 0 0.5rem 4rem #383838;
+    box-shadow: 0 0.5rem 2rem #383838;
     border-radius: 5px;
     padding-bottom: 3rem; }
     .plans .plan:not(:last-child) {
@@ -466,7 +466,11 @@ body {
       @media (max-width: 75em) {
         .plans .plan:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-bottom: 6rem;
+          margin: 0 2rem 6rem 2rem; } }
+    @media (max-width: 75em) {
+      .plans .plan:last-child {
+        margin: 0 2rem; } }
     .plans .plan--1 .plan-info__summary {
       background-color: #3DC46D;
       box-shadow: 0 0.5rem 2rem #3DC46D; }
@@ -517,7 +521,17 @@ body {
         margin-bottom: 1rem; }
       .plans .plan-info__description {
         font-size: 1.3rem;
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 300; }
+      .plans .plan-info__items {
+        text-align: center;
+        list-style: none;
+        font-size: 1.3rem; }
+        .plans .plan-info__items li {
+          padding: 1rem; }
+          .plans .plan-info__items li:not(:last-child) {
+            border-bottom: 1px solid rgba(56, 56, 56, 0.6); }
       .plans .plan-info__summary {
         display: flex;
         width: 90%;
@@ -633,3 +647,7 @@ hr {
   .section-contact .heading-primary {
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0.5rem 4rem rgba(255, 255, 255, 0.5); }
+  .section-contact .heading-secondary {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600; }

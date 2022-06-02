@@ -19,10 +19,6 @@ hr {
     padding: $section-default-padding;
 }
 
-.section-about {
-    // background-color: $white-secondary;
-}
-
 .section-features {
     padding-bottom: 5rem;
     // background-image: linear-gradient(to right bottom, rgba($dark-cyan, .8) 100%, rgba($white-primary, .8)), url('../img/hero-2.jpg');
@@ -55,5 +51,11 @@ hr {
     .heading-primary {
         color: rgba($white-primary, .9);
         text-shadow: 0 .5rem 4rem rgba($white-primary, .5);
+    }
+
+    .heading-secondary {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 600;
     }
 }
