@@ -7,25 +7,21 @@
 
 
     &-item {
-        padding: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        height: 100px;
         font-size: 1.6rem;
         border-radius: 1rem;
-        background-color: $white-secondary;
         width: 200px;
         margin: 1rem;
         transition: all .2s;
-        box-shadow: 0 .5rem 1rem $black;
+        box-shadow: 0 .1rem .4rem $black;
         backface-visibility: hidden;
-    
-        &:hover {
-            box-shadow: 0 1rem 1rem $black;
-            transform: scale(1.01) translateY(-.5rem);
-        }
 
-        &__count,
-        &__topic {
-            text-align: center;
-            text-transform: capitalize;
+        img {
+            width: 150px;
         }
     }
 }
