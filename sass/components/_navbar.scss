@@ -23,13 +23,13 @@
 
         & {
             span {
-                color: $yellow;
+                color: $green;
             }
         }
     }
 
     &__logo {
-        color: $yellow;
+        color: $green;
     }
     
     &__toggle {
@@ -48,7 +48,7 @@
     &__icon {
         &:hover {
             transform: scale(1.1);
-            color: $yellow;
+            color: $green;
         }
         
     }

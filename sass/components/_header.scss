@@ -25,12 +25,12 @@
 
         &__phrase {
             font-size: 6rem;
-            color: $white-secondary;
+            color: $white-primary;
             margin-bottom: 2rem;
             text-transform: capitalize;
     
             & span {
-                color: $yellow;
+                color: $green;
             }
 
             @include respond(phone) {
@@ -70,7 +70,7 @@
         font-weight: 700;
         text-decoration: none;
         font-size: 1.5rem;
-        color: $black;
+        color: $white-primary;
 
         &:hover {
             background-color: $white-primary;
@@ -85,7 +85,7 @@
         }
         
         &__try {
-            background-color: $yellow;
+            background-color: $green;
             transition: .2s ease;
         }
     }
@@ -151,7 +151,6 @@
         &--sign-up {
             background-color: $white-primary;
             color: $dark-cyan;
-            
         }
 
         &--sign-in {
