@@ -184,7 +184,8 @@ body {
 
 .footer {
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  width: 100%; }
   .footer__logo {
     font-size: 10rem;
     margin-bottom: 5rem; }
@@ -221,7 +222,8 @@ body {
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(rgba(2, 43, 58, 0.5), rgba(31, 122, 140, 0.5)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.8), rgba(61, 196, 109, 0.8)), url("../img/hero.jpg");
+  width: 100%;
   background-size: cover;
   background-position: bottom;
   display: flex;
@@ -261,7 +263,7 @@ body {
     @media (max-width: 37.5em) {
       .header-btn {
         text-align: center; } }
-    .header-btn__sign-up, .header-btn__details {
+    .header-btn__sign-up, .header-btn__try {
       border: none;
       padding: 1.5rem 2rem;
       border-radius: 3px;
@@ -272,7 +274,7 @@ body {
       text-decoration: none;
       font-size: 1.5rem;
       color: #383838; }
-      .header-btn__sign-up:hover, .header-btn__details:hover {
+      .header-btn__sign-up:hover, .header-btn__try:hover {
         background-color: #FFF;
         color: #383838; }
     .header-btn__sign-up {
@@ -280,9 +282,58 @@ body {
       color: #FFF;
       margin-right: .5rem;
       transition: .2s ease; }
-    .header-btn__details {
+    .header-btn__try {
       background-color: #F8CB2E;
       transition: .2s ease; }
+  .header__popup {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.97), rgba(61, 196, 109, 0.8));
+    background-size: cover;
+    color: #FFF;
+    background-position: bottom; }
+    .header__popup--cancel {
+      position: absolute;
+      top: 6rem;
+      left: 8rem;
+      cursor: pointer;
+      font-size: 3rem;
+      outline: 1px solid #3DC46D;
+      padding: 1rem 1.4rem;
+      border-radius: 50%;
+      color: #3DC46D; }
+      .header__popup--cancel:hover {
+        color: #FFF;
+        background-color: #3DC46D; }
+    .header__popup--heading {
+      margin-bottom: 5rem; }
+    .header__popup--btn {
+      margin-bottom: 7rem; }
+    .header__popup--sign-up, .header__popup--sign-in {
+      border: none;
+      padding: 1.5rem 2rem;
+      border-radius: 3rem;
+      text-transform: capitalize;
+      font-family: inherit;
+      cursor: pointer;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 1rem; }
+    .header__popup--sign-up {
+      background-color: #FFF;
+      color: #022B3A; }
+    .header__popup--sign-in {
+      background-color: #3DC46D;
+      color: #FFF; }
 
 .about {
   display: flex;
@@ -301,7 +352,6 @@ body {
     width: 200px;
     margin: 1rem;
     transition: all .2s;
-    box-shadow: 0 0.1rem 0.4rem #383838;
     backface-visibility: hidden; }
     .about-item img {
       width: 150px; }
@@ -653,7 +703,7 @@ hr {
   position: relative; }
 
 .section-contact {
-  background-image: linear-gradient(to right bottom, rgba(61, 196, 109, 0.8), rgba(2, 43, 58, 0.8)), url(../img/contact-bg.jpg);
+  background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.5), rgba(61, 196, 109, 0.8)), url(../img/contact-bg.jpg);
   background-position: center;
   background-size: cover;
   color: #FFF; }

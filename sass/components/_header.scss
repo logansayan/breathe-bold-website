@@ -1,6 +1,7 @@
 .header {
     height: 90vh;
-    background-image: linear-gradient(rgba($dark-cyan, .5), rgba($light-cyan, .5)), url("../img/hero.jpg");
+    background-image: linear-gradient(to right bottom, rgba($dark-cyan, .8), rgba($green, .8)), url("../img/hero.jpg");
+    width: 100%;
 
     background-size: cover;
     background-position: bottom;
@@ -59,7 +60,7 @@
         }
 
         &__sign-up,
-        &__details {
+        &__try {
         border: none;
         padding: 1.5rem 2rem;
         border-radius: 3px;
@@ -83,9 +84,79 @@
             transition: .2s ease;
         }
         
-        &__details {
+        &__try {
             background-color: $yellow;
             transition: .2s ease;
+        }
+    }
+
+    &__popup {
+        // transform: scale(0) translateY(-100rem);
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right bottom, rgba($dark-cyan, .97), rgba($green, .8));
+        background-size: cover;
+        color: $white-primary;
+        background-position: bottom;
+        
+        &--cancel {
+            position: absolute;
+            top: 6rem;
+            left: 8rem;
+            cursor: pointer;
+            font-size: 3rem;
+            outline: 1px solid $green;
+            padding: 1rem 1.4rem;
+            border-radius: 50%;
+            color: $green;
+
+            &:hover {
+                color: $white-primary;
+                background-color: $green;
+            }
+        }
+
+        
+
+        &--heading {
+            margin-bottom: 5rem;
+        }
+
+        &--btn {
+            margin-bottom: 7rem;
+        }
+
+        &--sign-up,
+        &--sign-in {
+            border: none;
+            padding: 1.5rem 2rem;
+            border-radius: 3rem;
+            text-transform: capitalize;
+            font-family: inherit;
+            cursor: pointer;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin: 1rem;
+        }
+
+        &--sign-up {
+            background-color: $white-primary;
+            color: $dark-cyan;
+            
+        }
+
+        &--sign-in {
+            background-color: $green;
+            color: $white-primary;
         }
     }
 }
