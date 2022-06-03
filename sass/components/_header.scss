@@ -59,7 +59,7 @@
             text-align: center;
         }
 
-        &__sign-up,
+        &__discover,
         &__try {
         border: none;
         padding: 1.5rem 2rem;
@@ -71,13 +71,13 @@
         text-decoration: none;
         font-size: 1.5rem;
         color: $white-primary;
-
+        
         &:hover {
             background-color: $white-primary;
             color: $black;
         }
     }
-        &__sign-up {
+        &__discover {
             background-color: $dark-cyan;
             color: $white-primary;
             margin-right: .5rem;

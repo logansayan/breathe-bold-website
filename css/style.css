@@ -262,7 +262,7 @@ body {
     @media (max-width: 37.5em) {
       .header-btn {
         text-align: center; } }
-    .header-btn__sign-up, .header-btn__try {
+    .header-btn__discover, .header-btn__try {
       border: none;
       padding: 1.5rem 2rem;
       border-radius: 3px;
@@ -273,10 +273,10 @@ body {
       text-decoration: none;
       font-size: 1.5rem;
       color: #FFF; }
-      .header-btn__sign-up:hover, .header-btn__try:hover {
+      .header-btn__discover:hover, .header-btn__try:hover {
         background-color: #FFF;
         color: #383838; }
-    .header-btn__sign-up {
+    .header-btn__discover {
       background-color: #022B3A;
       color: #FFF;
       margin-right: .5rem;
@@ -672,8 +672,7 @@ body {
         background-color: #FFF; }
 
 hr {
-  border: 10px solid #383838;
-  border-style: dotted;
+  border: 3px solid black;
   border-top: 0;
   border-right: 0;
   border-left: 0;
