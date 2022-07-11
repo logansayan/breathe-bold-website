@@ -1,6 +1,6 @@
 .header {
     height: 90vh;
-    background-image: linear-gradient(to right bottom, rgba($dark-cyan, .8), rgba($green, .8)), url("../img/hero.jpg");
+    background-image: linear-gradient(to right bottom, rgba($dark-cyan, .6), rgba($green, .6)), url("../img/hero.jpg");
     width: 100%;
 
     background-size: cover;
@@ -169,5 +169,10 @@
     color: $black;
     text-shadow: 0 .1rem 1rem $white-primary;
     padding: 0 1rem;
+    transition: color .2s;
+
+    &:hover {
+        color: $green;
+    }
 }
 

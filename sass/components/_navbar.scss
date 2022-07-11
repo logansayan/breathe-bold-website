@@ -1,7 +1,7 @@
 /* NAVIGATION */
 
 .navbar {
-    background-color: rgba($dark-cyan, .2);
+    background-color: rgba($dark-cyan, .8);
     position: fixed;
     left: 0;
     top: 0;
@@ -78,7 +78,6 @@
         
         li {
             list-style: none;
-            text-shadow: 0 .1rem 1rem $black;
 
             @include respond(tab-port) {
                 width: 100%;

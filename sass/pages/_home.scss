@@ -42,9 +42,9 @@ hr {
 
 
 .section-contact {
-    background-image: linear-gradient(to right bottom, rgba($dark-cyan, .5), rgba($green, .8)), url(../img/contact-bg.jpg);
+    background-image: linear-gradient(to right bottom, rgba($dark-cyan, .6), rgba($green, .6)), url(../img/contact-bg.jpg);
 
-    background-position: center;
+    background-position: top;
     background-size: cover;
     color: $white-primary;
 

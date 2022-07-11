@@ -111,7 +111,7 @@ body {
 
 /* NAVIGATION */
 .navbar {
-  background-color: rgba(2, 43, 58, 0.2);
+  background-color: rgba(2, 43, 58, 0.8);
   position: fixed;
   left: 0;
   top: 0;
@@ -160,8 +160,7 @@ body {
         align-items: center;
         text-align: center; } }
   .navbar__links li {
-    list-style: none;
-    text-shadow: 0 0.1rem 1rem #383838; }
+    list-style: none; }
     @media (max-width: 59.375em) {
       .navbar__links li {
         width: 100%; } }
@@ -227,7 +226,7 @@ body {
 
 .header {
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.8), rgba(61, 196, 109, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.6), rgba(61, 196, 109, 0.6)), url("../img/hero.jpg");
   width: 100%;
   background-size: cover;
   background-position: bottom;
@@ -348,7 +347,10 @@ body {
   z-index: 999;
   color: #383838;
   text-shadow: 0 0.1rem 1rem #FFF;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  transition: color .2s; }
+  .go-top:hover {
+    color: #3DC46D; }
 
 .about {
   display: flex;
@@ -716,8 +718,8 @@ hr {
   position: relative; }
 
 .section-contact {
-  background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.5), rgba(61, 196, 109, 0.8)), url(../img/contact-bg.jpg);
-  background-position: center;
+  background-image: linear-gradient(to right bottom, rgba(2, 43, 58, 0.6), rgba(61, 196, 109, 0.6)), url(../img/contact-bg.jpg);
+  background-position: top;
   background-size: cover;
   color: #FFF; }
   .section-contact .heading-primary {
