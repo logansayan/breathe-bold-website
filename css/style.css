@@ -111,7 +111,11 @@ body {
 
 /* NAVIGATION */
 .navbar {
-  background-color: #022B3A;
+  background-color: rgba(2, 43, 58, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,7 +130,8 @@ body {
     font-size: 3rem;
     padding: 1.5rem;
     text-decoration: none;
-    color: #FFF; }
+    color: #FFF;
+    text-shadow: 0 0.1rem 1rem #383838; }
     .navbar__brand span {
       color: #3DC46D; }
   .navbar__logo {
@@ -155,7 +160,8 @@ body {
         align-items: center;
         text-align: center; } }
   .navbar__links li {
-    list-style: none; }
+    list-style: none;
+    text-shadow: 0 0.1rem 1rem #383838; }
     @media (max-width: 59.375em) {
       .navbar__links li {
         width: 100%; } }
@@ -333,6 +339,16 @@ body {
     .header__popup--sign-in {
       background-color: #3DC46D;
       color: #FFF; }
+
+.go-top {
+  position: fixed;
+  right: 3rem;
+  bottom: 1.5rem;
+  font-size: 4rem;
+  z-index: 999;
+  color: #383838;
+  text-shadow: 0 0.1rem 1rem #FFF;
+  padding: 0 1rem; }
 
 .about {
   display: flex;

@@ -1,7 +1,11 @@
 /* NAVIGATION */
 
 .navbar {
-    background-color: $dark-cyan;
+    background-color: rgba($dark-cyan, .2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +23,7 @@
         padding: 1.5rem;
         text-decoration: none;
         color: $white-primary;
+        text-shadow: 0 .1rem 1rem $black;
 
 
         & {
@@ -73,6 +78,7 @@
         
         li {
             list-style: none;
+            text-shadow: 0 .1rem 1rem $black;
 
             @include respond(tab-port) {
                 width: 100%;

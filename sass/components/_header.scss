@@ -160,3 +160,14 @@
     }
 }
 
+.go-top {
+    position: fixed;
+    right: 3rem;
+    bottom: 1.5rem;
+    font-size: 4rem;
+    z-index: 999;
+    color: $black;
+    text-shadow: 0 .1rem 1rem $white-primary;
+    padding: 0 1rem;
+}
+
