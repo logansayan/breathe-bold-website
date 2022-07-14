@@ -120,7 +120,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
-  color: #FFF; }
+  color: #FFF;
+  z-index: 999; }
   @media (max-width: 59.375em) {
     .navbar {
       flex-direction: column;
